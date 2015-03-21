@@ -7,7 +7,7 @@ android-pdfview:
 
 pdfviewer:
 
-- Original Radaee PDF SDK Demo plus android-pdfview and radaee jar modules.
+- Original Radaee PDF SDK Demo http://www.radaeepdf.com/ plus android-pdfview and radaee jar modules.
 
 - Feel free to edit radaee33 to add more functionality from app module.
 
