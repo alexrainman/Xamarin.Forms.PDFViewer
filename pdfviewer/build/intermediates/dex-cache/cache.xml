@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ded9acc6a9792b8f1afc470f0c9cd36d178914cd">
+        <dex dex="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/build/intermediates/pre-dexed/debug/android-support-v4-bd489d122f6363c609310106a4a618da7b308f86.jar" />
+    </item>
+    <item
+        jar="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/libs/com.radaee.view.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="aef3de7836a5cfe373d71095b414e33a370b2257">
+        <dex dex="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/build/intermediates/pre-dexed/debug/com.radaee.view-fbb3e9d5a6cae0dc01f4de1f632946062f39193f.jar" />
+    </item>
+
+</items>

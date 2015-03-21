@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.joanzapata.pdfview">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AnimationManager" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="AnimationManager" static="false" type="com.joanzapata.pdfview.AnimationManager" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.PDFView">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="startXAnimation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startZoomAnimation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopAll" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AnimationManager.XAnimation" static="false" visibility="">
+<implements name="android.animation.ValueAnimator.AnimatorUpdateListener" name-generic-aware="android.animation.ValueAnimator.AnimatorUpdateListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAnimationUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.animation.ValueAnimator">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AnimationManager.ZoomAnimation" static="false" visibility="">
+<implements name="android.animation.Animator.AnimatorListener" name-generic-aware="android.animation.Animator.AnimatorListener">
+</implements>
+<implements name="android.animation.ValueAnimator.AnimatorUpdateListener" name-generic-aware="android.animation.ValueAnimator.AnimatorUpdateListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAnimationCancel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.animation.Animator">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAnimationEnd" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.animation.Animator">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAnimationRepeat" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.animation.Animator">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAnimationStart" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.animation.Animator">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAnimationUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.animation.ValueAnimator">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CacheManager" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="CacheManager" static="false" type="com.joanzapata.pdfview.CacheManager" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="cachePart" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.model.PagePart">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="cacheThumbnail" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.model.PagePart">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="containsThumbnail" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="android.graphics.RectF">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPageParts" native="false" return="java.util.Vector&lt;com.joanzapata.pdfview.model.PagePart&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getThumbnails" native="false" return="java.util.Vector&lt;com.joanzapata.pdfview.model.PagePart&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeANewSet" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="upPartIfContained" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="android.graphics.RectF">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CacheManager.PagePartComparator" static="false" visibility="">
+<implements name="java.util.Comparator" name-generic-aware="java.util.Comparator&lt;com.joanzapata.pdfview.model.PagePart&gt;">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="compare" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.model.PagePart">
+</parameter>
+<parameter name="p1" type="com.joanzapata.pdfview.model.PagePart">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compare" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+<parameter name="p1" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, java.lang.Void&gt;" final="false" name="DecodingAsyncTask" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="DecodingAsyncTask" static="false" type="com.joanzapata.pdfview.DecodingAsyncTask" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+<parameter name="p1" type="com.joanzapata.pdfview.PDFView">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Object[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Void...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPostExecute" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Void">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DragPinchManager" static="false" visibility="">
+<implements name="com.joanzapata.pdfview.util.DragPinchListener.OnDoubleTapListener" name-generic-aware="com.joanzapata.pdfview.util.DragPinchListener.OnDoubleTapListener">
+</implements>
+<implements name="com.joanzapata.pdfview.util.DragPinchListener.OnDragListener" name-generic-aware="com.joanzapata.pdfview.util.DragPinchListener.OnDragListener">
+</implements>
+<implements name="com.joanzapata.pdfview.util.DragPinchListener.OnPinchListener" name-generic-aware="com.joanzapata.pdfview.util.DragPinchListener.OnPinchListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DragPinchManager" static="false" type="com.joanzapata.pdfview.DragPinchManager" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.PDFView">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="endDrag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isZooming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDoubleTap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDrag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPinch" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="android.graphics.PointF">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSwipeEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startDrag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.SurfaceView" extends-generic-aware="android.view.SurfaceView" final="false" name="PDFView" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFView" static="false" type="com.joanzapata.pdfview.PDFView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="enableSwipe" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromAsset" native="false" return="com.joanzapata.pdfview.PDFView.Configurator" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromFile" native="false" return="com.joanzapata.pdfview.PDFView.Configurator" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.File">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentPage" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentXOffset" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentYOffset" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOptimalPageWidth" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPageCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getZoom" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isZooming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="jumpTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.vudroid.core.DecodeService">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadPages" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="moveRelativeTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="moveTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onBitmapRendered" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.model.PagePart">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onLayerUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetZoom" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetZoomWithAnimation" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toCurrentScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toRealScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomCenteredRelativeTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="android.graphics.PointF">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomCenteredTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="android.graphics.PointF">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFView.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFView.1SpiralLoopListenerImpl" static="false" visibility="">
+<implements name="com.joanzapata.pdfview.SpiralLoopManager.SpiralLoopListener" name-generic-aware="com.joanzapata.pdfview.SpiralLoopManager.SpiralLoopListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onLoop" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFView.Configurator" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="defaultPage" native="false" return="com.joanzapata.pdfview.PDFView.Configurator" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enableSwipe" native="false" return="com.joanzapata.pdfview.PDFView.Configurator" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="load" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDraw" native="false" return="com.joanzapata.pdfview.PDFView.Configurator" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.listener.OnDrawListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onLoad" native="false" return="com.joanzapata.pdfview.PDFView.Configurator" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.listener.OnLoadCompleteListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPageChange" native="false" return="com.joanzapata.pdfview.PDFView.Configurator" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.listener.OnPageChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pages" native="false" return="com.joanzapata.pdfview.PDFView.Configurator" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showMinimap" native="false" return="com.joanzapata.pdfview.PDFView.Configurator" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.joanzapata.pdfview.PDFView.State&gt;" final="true" name="PDFView.State" static="true" visibility="">
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="com.joanzapata.pdfview.PDFView.State" type-generic-aware="com.joanzapata.pdfview.PDFView.State" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LOADED" static="true" transient="false" type="com.joanzapata.pdfview.PDFView.State" type-generic-aware="com.joanzapata.pdfview.PDFView.State" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHOWN" static="true" transient="false" type="com.joanzapata.pdfview.PDFView.State" type-generic-aware="com.joanzapata.pdfview.PDFView.State" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, com.joanzapata.pdfview.model.PagePart, java.lang.Void&gt;" final="false" name="RenderingAsyncTask" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="RenderingAsyncTask" static="false" type="com.joanzapata.pdfview.RenderingAsyncTask" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.PDFView">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addRenderingTask" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="android.graphics.RectF">
+</parameter>
+<parameter name="p5" type="boolean">
+</parameter>
+<parameter name="p6" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Object[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Void...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onProgressUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.joanzapata.pdfview.model.PagePart...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeAllTasks" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="wakeUp" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="RenderingAsyncTask.RenderingTask" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="RenderingAsyncTask.RenderingTask" static="false" type="com.joanzapata.pdfview.RenderingAsyncTask.RenderingTask" visibility="public">
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="android.graphics.RectF">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+<parameter name="p6" type="boolean">
+</parameter>
+<parameter name="p7" type="int">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SpiralLoopManager" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="SpiralLoopManager" static="false" type="com.joanzapata.pdfview.SpiralLoopManager" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.SpiralLoopManager.SpiralLoopListener">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="startLoop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SpiralLoopManager.SpiralLoopListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onLoop" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</interface>
+</package>
+<package name="com.joanzapata.pdfview.exception">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.RuntimeException" extends-generic-aware="java.lang.RuntimeException" final="false" name="FileNotFoundException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FileNotFoundException" static="false" type="com.joanzapata.pdfview.exception.FileNotFoundException" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="FileNotFoundException" static="false" type="com.joanzapata.pdfview.exception.FileNotFoundException" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+</package>
+<package name="com.joanzapata.pdfview.listener">
+<interface abstract="true" deprecated="not deprecated" final="false" name="OnDrawListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onLayerDrawn" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="OnLoadCompleteListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="loadComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="OnPageChangeListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onPageChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</interface>
+</package>
+<package name="com.joanzapata.pdfview.model">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PagePart" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PagePart" static="false" type="com.joanzapata.pdfview.model.PagePart" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="float">
+</parameter>
+<parameter name="p5" type="android.graphics.RectF">
+</parameter>
+<parameter name="p6" type="boolean">
+</parameter>
+<parameter name="p7" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCacheOrder" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeight" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPage" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPageRelativeBounds" native="false" return="android.graphics.RectF" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRenderedBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserPage" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWidth" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isThumbnail" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCacheOrder" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+</package>
+<package name="com.joanzapata.pdfview.util">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ArrayUtils" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="arrayToString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="calculateIndexesInDuplicateArray" native="false" return="int[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deleteDuplicatedPages" native="false" return="int[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int[]">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Constants" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="DEBUG_MODE" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRID_SIZE" static="true" transient="false" type="int" type-generic-aware="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LOADED_SIZE" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MASK_ALPHA" static="true" transient="false" type="int" type-generic-aware="int" value="20" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MINIMAP_MAX_SIZE" static="true" transient="false" type="float" type-generic-aware="float" value="200.000000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PART_SIZE" static="true" transient="false" type="float" type-generic-aware="float" value="256.000000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THUMBNAIL_RATIO" static="true" transient="false" type="float" type-generic-aware="float" value="0.200000" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Constants.Cache" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="CACHE_SIZE" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THUMBNAILS_CACHE_SIZE" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Constants.Pinch" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="MAXIMUM_ZOOM" static="true" transient="false" type="float" type-generic-aware="float" value="10.000000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MINIMUM_ZOOM" static="true" transient="false" type="float" type-generic-aware="float" value="1.000000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="QUICK_MOVE_THRESHOLD_DISTANCE" static="true" transient="false" type="int" type-generic-aware="int" value="50" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="QUICK_MOVE_THRESHOLD_TIME" static="true" transient="false" type="int" type-generic-aware="int" value="250" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DragPinchListener" static="false" visibility="public">
+<implements name="android.view.View.OnTouchListener" name-generic-aware="android.view.View.OnTouchListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DragPinchListener" static="false" type="com.joanzapata.pdfview.util.DragPinchListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTouch" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnDoubleTapListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.util.DragPinchListener.OnDoubleTapListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnDragListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.util.DragPinchListener.OnDragListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnPinchListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.joanzapata.pdfview.util.DragPinchListener.OnPinchListener">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DragPinchListener.1" static="true" visibility=""/>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DragPinchListener.OnDoubleTapListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onDoubleTap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DragPinchListener.OnDragListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="endDrag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onDrag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startDrag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DragPinchListener.OnPinchListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onPinch" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="android.graphics.PointF">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.joanzapata.pdfview.util.DragPinchListener.State&gt;" final="true" name="DragPinchListener.State" static="true" visibility="">
+<field deprecated="not deprecated" final="true" name="DRAG" static="true" transient="false" type="com.joanzapata.pdfview.util.DragPinchListener.State" type-generic-aware="com.joanzapata.pdfview.util.DragPinchListener.State" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NONE" static="true" transient="false" type="com.joanzapata.pdfview.util.DragPinchListener.State" type-generic-aware="com.joanzapata.pdfview.util.DragPinchListener.State" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ZOOM" static="true" transient="false" type="com.joanzapata.pdfview.util.DragPinchListener.State" type-generic-aware="com.joanzapata.pdfview.util.DragPinchListener.State" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FileUtils" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="copy" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+<parameter name="p1" type="java.io.File">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fileFromAsset" native="false" return="java.io.File" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="NumberUtils" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="limit" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</class>
+</package>
+<package name="org.mdanderson.android_pdfview">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="org.mdanderson.android_pdfview.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;org.mdanderson.android_pdfview&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+<package name="org.vudroid.core">
+<interface abstract="true" deprecated="not deprecated" final="false" name="DecodeService" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="decodePage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="org.vudroid.core.DecodeService.DecodeCallback">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="android.graphics.RectF">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEffectivePagesHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEffectivePagesWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPage" native="false" return="org.vudroid.core.codec.CodecPage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPageCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPageHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPageWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="open" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setContainerView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setContentResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="stopDecoding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DecodeService.DecodeCallback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="decodeComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DecodeServiceBase" static="false" visibility="public">
+<implements name="org.vudroid.core.DecodeService" name-generic-aware="org.vudroid.core.DecodeService">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DecodeServiceBase" static="false" type="org.vudroid.core.DecodeServiceBase" visibility="public">
+<parameter name="p0" type="org.vudroid.core.codec.CodecContext">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="decodePage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="org.vudroid.core.DecodeService.DecodeCallback">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="android.graphics.RectF">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEffectivePagesHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEffectivePagesWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPage" native="false" return="org.vudroid.core.codec.CodecPage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPageCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPageHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPageWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContainerView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopDecoding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DECODE_SERVICE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ViewDroidDecodeService&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DecodeServiceBase.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DecodeServiceBase.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DecodeServiceBase.DecodeTask" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="android.view.View" extends-generic-aware="android.view.View" final="false" name="DocumentView" static="false" visibility="public">
+<implements name="org.vudroid.core.events.ZoomListener" name-generic-aware="org.vudroid.core.events.ZoomListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DocumentView" static="false" type="org.vudroid.core.DocumentView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="org.vudroid.core.models.ZoomModel">
+</parameter>
+<parameter name="p2" type="org.vudroid.core.models.DecodingProgressModel">
+</parameter>
+<parameter name="p3" type="org.vudroid.core.models.CurrentPageModel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="commitZoom" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentPage" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="goToPage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDecodeService" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.vudroid.core.DecodeService">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showDocument" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DocumentView.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DocumentView.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DocumentView.3" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Page" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAspectRatio" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTop" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isVisible" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAspectRatio" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAspectRatio" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateVisibility" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PageTreeNode" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="getBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateVisibility" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PageTreeNode.1" static="false" visibility="">
+<implements name="org.vudroid.core.DecodeService.DecodeCallback" name-generic-aware="org.vudroid.core.DecodeService.DecodeCallback">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="decodeComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PageTreeNode.1.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="VuDroidLibraryLoader" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="VuDroidLibraryLoader" static="false" type="org.vudroid.core.VuDroidLibraryLoader" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="load" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+<package name="org.vudroid.core.codec">
+<interface abstract="true" deprecated="not deprecated" final="false" name="CodecContext" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="openDocument" native="false" return="org.vudroid.core.codec.CodecDocument" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setContentResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CodecDocument" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getPage" native="false" return="org.vudroid.core.codec.CodecPage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPageCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CodecPage" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isDecoding" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="renderBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="android.graphics.RectF">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="waitForDecode" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package>
+<package name="org.vudroid.core.events">
+<class abstract="false" deprecated="not deprecated" extends="org.vudroid.core.events.SafeEvent" extends-generic-aware="org.vudroid.core.events.SafeEvent&lt;org.vudroid.core.events.BringUpZoomControlsListener&gt;" final="false" name="BringUpZoomControlsEvent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BringUpZoomControlsEvent" static="false" type="org.vudroid.core.events.BringUpZoomControlsEvent" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatchSafely" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.vudroid.core.events.BringUpZoomControlsListener">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="BringUpZoomControlsListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="toggleZoomControls" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CurrentPageListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="currentPageChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.vudroid.core.events.SafeEvent" extends-generic-aware="org.vudroid.core.events.SafeEvent&lt;org.vudroid.core.events.CurrentPageListener&gt;" final="false" name="CurrentPageListener.CurrentPageChangedEvent" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CurrentPageListener.CurrentPageChangedEvent" static="false" type="org.vudroid.core.events.CurrentPageListener.CurrentPageChangedEvent" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatchSafely" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.vudroid.core.events.CurrentPageListener">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DecodingProgressListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="decodingProgressChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.vudroid.core.events.SafeEvent" extends-generic-aware="org.vudroid.core.events.SafeEvent&lt;org.vudroid.core.events.DecodingProgressListener&gt;" final="false" name="DecodingProgressListener.DecodingProgressEvent" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DecodingProgressListener.DecodingProgressEvent" static="false" type="org.vudroid.core.events.DecodingProgressListener.DecodingProgressEvent" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatchSafely" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.vudroid.core.events.DecodingProgressListener">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Event" static="false" visibility="public">
+<typeParameters>
+<typeParameter name="T"/>
+</typeParameters>
+<method abstract="true" deprecated="not deprecated" final="false" name="dispatchOn" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="EventDispatcher" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EventDispatcher" static="false" type="org.vudroid.core.events.EventDispatcher" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addEventListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatch" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.vudroid.core.events.Event">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeEventListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SafeEvent" static="false" visibility="public">
+<typeParameters>
+<typeParameter name="T"/>
+</typeParameters>
+<implements name="org.vudroid.core.events.Event" name-generic-aware="org.vudroid.core.events.Event&lt;T&gt;">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SafeEvent" static="false" type="org.vudroid.core.events.SafeEvent" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="dispatchOn" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatchSafely" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="T">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.vudroid.core.events.SafeEvent" extends-generic-aware="org.vudroid.core.events.SafeEvent&lt;org.vudroid.core.events.ZoomListener&gt;" final="false" name="ZoomChangedEvent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ZoomChangedEvent" static="false" type="org.vudroid.core.events.ZoomChangedEvent" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatchSafely" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.vudroid.core.events.ZoomListener">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ZoomListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="commitZoom" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="zoomChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.vudroid.core.events.SafeEvent" extends-generic-aware="org.vudroid.core.events.SafeEvent&lt;org.vudroid.core.events.ZoomListener&gt;" final="false" name="ZoomListener.CommitZoomEvent" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ZoomListener.CommitZoomEvent" static="false" type="org.vudroid.core.events.ZoomListener.CommitZoomEvent" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatchSafely" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.vudroid.core.events.ZoomListener">
+</parameter>
+</method>
+</class>
+</package>
+<package name="org.vudroid.core.models">
+<class abstract="false" deprecated="not deprecated" extends="org.vudroid.core.events.EventDispatcher" extends-generic-aware="org.vudroid.core.events.EventDispatcher" final="false" name="CurrentPageModel" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CurrentPageModel" static="false" type="org.vudroid.core.models.CurrentPageModel" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCurrentPageIndex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.vudroid.core.events.EventDispatcher" extends-generic-aware="org.vudroid.core.events.EventDispatcher" final="false" name="DecodingProgressModel" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DecodingProgressModel" static="false" type="org.vudroid.core.models.DecodingProgressModel" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="decrease" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="increase" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.vudroid.core.events.EventDispatcher" extends-generic-aware="org.vudroid.core.events.EventDispatcher" final="false" name="ZoomModel" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ZoomModel" static="false" type="org.vudroid.core.models.ZoomModel" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="canDecrement" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="commit" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decreaseZoom" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getZoom" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="increaseZoom" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHorizontalScrollEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHorizontalScrollEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setZoom" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toggleZoomControls" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+<package name="org.vudroid.core.multitouch">
+<interface abstract="true" deprecated="not deprecated" final="false" name="MultiTouchZoom" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="isResetLastPointAfterZoom" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onTouchEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setResetLastPointAfterZoom" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MultiTouchZoomImpl" static="false" visibility="public">
+<implements name="org.vudroid.core.multitouch.MultiTouchZoom" name-generic-aware="org.vudroid.core.multitouch.MultiTouchZoom">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="MultiTouchZoomImpl" static="false" type="org.vudroid.core.multitouch.MultiTouchZoomImpl" visibility="public">
+<parameter name="p0" type="org.vudroid.core.models.ZoomModel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="isResetLastPointAfterZoom" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTouchEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setResetLastPointAfterZoom" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</class>
+</package>
+<package name="org.vudroid.core.utils">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MD5StringUtil" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MD5StringUtil" static="false" type="org.vudroid.core.utils.MD5StringUtil" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="md5StringFor" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PathFromUri" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PathFromUri" static="false" type="org.vudroid.core.utils.PathFromUri" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="retrieve" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+</method>
+</class>
+</package>
+<package name="org.vudroid.pdfdroid.codec">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PdfContext" static="false" visibility="public">
+<implements name="org.vudroid.core.codec.CodecContext" name-generic-aware="org.vudroid.core.codec.CodecContext">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PdfContext" static="false" type="org.vudroid.pdfdroid.codec.PdfContext" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="openDocument" native="false" return="org.vudroid.core.codec.CodecDocument" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PdfDocument" static="false" visibility="public">
+<implements name="org.vudroid.core.codec.CodecDocument" name-generic-aware="org.vudroid.core.codec.CodecDocument">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPage" native="false" return="org.vudroid.core.codec.CodecPage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPageCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PdfPage" static="false" visibility="public">
+<implements name="org.vudroid.core.codec.CodecPage" name-generic-aware="org.vudroid.core.codec.CodecPage">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDecoding" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="render" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Rect">
+</parameter>
+<parameter name="p1" type="android.graphics.Matrix">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="renderBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="android.graphics.RectF">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="waitForDecode" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+</api>

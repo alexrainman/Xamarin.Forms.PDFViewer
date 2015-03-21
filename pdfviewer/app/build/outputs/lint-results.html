@@ -1,0 +1,1722 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Lint Report</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" type="text/css" href="lint-results_files/hololike.css" />
+<script language="javascript" type="text/javascript"> 
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+//--> 
+</script>
+</head>
+<body>
+<h1>Lint Report</h1>
+<div class="titleSeparator"></div>
+Check performed at Sat Mar 21 15:58:17 CDT 2015.<br/>
+6 errors and 101 warnings found:<br/><br/>
+<table class="overview">
+<tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-error.png" alt="Error" />
+<a href="#MissingRegistered">MissingRegistered: Missing registered class</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#DefaultLocale">DefaultLocale: Implied default locale in case conversion</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#OldTargetApi">OldTargetApi: Target SDK attribute is not targeting latest version</a>
+</td></tr>
+<tr>
+<td class="countColumn">5</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#SdCardPath">SdCardPath: Hardcoded reference to <code>/sdcard</code></a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UnusedAttribute">UnusedAttribute: Attribute unused on older versions</a>
+</td></tr>
+<tr>
+<td class="countColumn">14</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#InflateParams">InflateParams: Layout Inflation without a Parent</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#GradleOverrides">GradleOverrides: Value overridden by Gradle build script</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-error.png" alt="Error" />
+<a href="#MangledCRLF">MangledCRLF: Mangled file line endings</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#PxUsage">PxUsage: Using 'px' dimension</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Security">Security</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#TrulyRandom">TrulyRandom: Weak RNG</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#AllowBackup">AllowBackup: Missing <code>allowBackup</code> attribute</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#DrawAllocation">DrawAllocation: Memory allocations within drawing code</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#HandlerLeak">HandlerLeak: Handler reference leaks</a>
+</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#FloatMath">FloatMath: Using <code>FloatMath</code> instead of <code>Math</code></a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#InefficientWeight">InefficientWeight: Inefficient layout weight</a>
+</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UnusedResources">UnusedResources: Unused resources</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UselessParent">UselessParent: Useless parent layout</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
+</td></tr>
+<tr>
+<td class="countColumn">6</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconDipSize">IconDipSize: Icon density-independent size validation</a>
+</td></tr>
+<tr>
+<td class="countColumn">6</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconDuplicatesConfig">IconDuplicatesConfig: Identical bitmaps across various configurations</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconMissingDensityFolder">IconMissingDensityFolder: Missing density folder</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability">Usability</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#TextFields">TextFields: Missing <code>inputType</code> or <code>hint</code></a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Accessibility">Accessibility</a>
+</td></tr>
+<tr>
+<td class="countColumn">5</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ClickableViewAccessibility">ClickableViewAccessibility: Accessibility in Custom Views</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Internationalization">Internationalization</a>
+</td></tr>
+<tr>
+<td class="countColumn">38</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#HardcodedText">HardcodedText: Hardcoded text</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (10)</a>
+</td></tr></table>
+<br/>
+<a name="Correctness"></a>
+<div class="category"><a href="#" title="Return to top">Correctness</a><div class="categorySeparator"></div>
+</div>
+<a name="MissingRegistered"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">MissingRegistered: Missing registered class</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/main.xml">../../src/main/res/layout/main.xml</a>:6</span>: <span class="message">Class referenced in the layout file, <code>com.radaee.reader.PDFReaderOld</code>, was not found in the project or the libraries</span><br /><pre class="errorlines">
+<span class="lineno">   3</span>     android:layout_width="fill_parent"
+<span class="lineno">   4</span>     android:layout_height="fill_parent" >
+<span class="lineno">   5</span> 
+<span class="lineno">   6</span>     <span class="errorspan">&lt;com.radaee.reader.PDFReaderOld</span>
+<span class="lineno">   7</span>         android:id="@+id/PDFView"
+<span class="lineno">   8</span>         android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/main.xml">../../src/main/res/layout/main.xml</a>:58</span>: <span class="message">Class referenced in the layout file, <code>com.radaee.pdfex.ThumbView</code>, was not found in the project or the libraries</span><br /><pre class="errorlines">
+<span class="lineno">  55</span>         android:layout_width="match_parent"
+<span class="lineno">  56</span>         android:layout_height="64px"
+<span class="lineno">  57</span>         android:layout_above="@+id/bar_find"
+<span class="lineno">  58</span>         android:layout_alignParentRight="true" />
+<span class="lineno">  59</span> 
+<span class="lineno">  60</span>     &lt;LinearLayout
+</pre>
+</div>
+<div class="metadata">Priority: 8 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: Missing registered class.</div>
+<div class="explanation">
+If a class is referenced in the manifest, it must also exist in the project (or in one of the libraries included by the project. This check helps uncover typos in registration names, or attempts to rename or move classes without updating the manifest file properly.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/topics/manifest/manifest-intro.html">http://developer.android.com/guide/topics/manifest/manifest-intro.html</a>
+</div><br/>To suppress this error, use the issue id "MissingRegistered" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="DefaultLocale"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">DefaultLocale: Implied default locale in case conversion</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/radaee/util/PDFHttpStream.java">../../src/main/java/com/radaee/util/PDFHttpStream.java</a>:362</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use <code>String.format(Locale, ...)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 359</span> 			conn.disconnect();
+<span class="lineno"> 360</span> 			long time2 = System.currentTimeMillis();
+<span class="lineno"> 361</span> 			//it's better to comment this line in release version.
+<span class="lineno"> 362</span> 			Log.d(String.<span class="errorspan">format("Time:%06d %d", start/BLOCK_SIZE, len), String.valueOf(time2 - time1));</span>
+<span class="lineno"> 363</span> 			return data;
+<span class="lineno"> 364</span> 		}
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Implied default locale in case conversion.</div>
+<div class="explanation">
+Calling <code>String#toLowerCase()</code> or <code>#toUpperCase()</code> <b>without specifying an explicit locale</b> is a common source of bugs. The reason for that is that those methods will use the current locale on the user's device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for <code>i</code> is <b>not</b> <code>I</code>.<br/>
+<br/>
+If you want the methods to just perform ASCII replacement, for example to convert an enum name, call <code>String#toUpperCase(Locale.US)</code> instead. If you really want to use the current locale, call <code>String#toUpperCase(Locale.getDefault())</code> instead.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/java/util/Locale.html#default_locale">http://developer.android.com/reference/java/util/Locale.html#default_locale</a>
+</div><br/>To suppress this error, use the issue id "DefaultLocale" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="OldTargetApi"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">OldTargetApi: Target SDK attribute is not targeting latest version</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:10</span>: <span class="message">Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.</span><br /><pre class="errorlines">
+<span class="lineno">   7</span>     defaultConfig {
+<span class="lineno">   8</span>         applicationId "com.radaee.reader"
+<span class="lineno">   9</span>         minSdkVersion 8
+<span class="lineno">  10</span>         <span class="errorspan">targetSdkVersion 8</span>
+<span class="lineno">  11</span>         compileOptions {
+<span class="lineno">  12</span>             sourceCompatibility JavaVersion.VERSION_1_5
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Target SDK attribute is not targeting latest version.</div>
+<div class="explanation">
+When your application runs on a version of Android that is more recent than your <code>targetSdkVersion</code> specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the <code>targetSdkVersion</code> is less than 14, your app may get an option button in the UI.<br/>
+<br/>
+To fix this issue, set the <code>targetSdkVersion</code> to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: <a href="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html">http://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html">http://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a>
+</div><br/>To suppress this error, use the issue id "OldTargetApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SdCardPath"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">SdCardPath: Hardcoded reference to <code>/sdcard</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFEncAct.java">../../src/main/java/com/radaee/reader/PDFEncAct.java</a>:35</span>: <span class="message">Do not hardcode "/sdcard/"; use <code>Environment.getExternalStorageDirectory().getPath()</code> instead</span><br /><pre class="errorlines">
+<span class="lineno">  32</span>         //encrypt PDF file first
+<span class="lineno">  33</span>         //the key must 16 bytes long.
+<span class="lineno">  34</span>         byte[] key = new byte[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15,16};
+<span class="lineno">  35</span>         PDFAESEncOld.encrypt(<span class="errorspan">"/sdcard/src.pdf", "/sdcard/dst.pdf", key);</span>
+<span class="lineno">  36</span> 
+<span class="lineno">  37</span>         //using PDFAESStream to decrypt PDF file.
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFEncAct.java">../../src/main/java/com/radaee/reader/PDFEncAct.java</a>:39</span>: <span class="message">Do not hardcode "/sdcard/"; use <code>Environment.getExternalStorageDirectory().getPath()</code> instead</span><br /><pre class="errorlines">
+<span class="lineno">  36</span> 
+<span class="lineno">  37</span>         //using PDFAESStream to decrypt PDF file.
+<span class="lineno">  38</span>         m_stream = new PDFAESStreamOld();
+<span class="lineno">  39</span>         if( !m_stream.open(<span class="errorspan">"/sdcard/dst.pdf", key) )</span>
+<span class="lineno">  40</span>         	return;
+<span class="lineno">  41</span>         m_doc = new Document();
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFReaderAct.java">../../src/main/java/com/radaee/reader/PDFReaderAct.java</a>:258</span>: <span class="message">Do not hardcode "/sdcard/"; use <code>Environment.getExternalStorageDirectory().getPath()</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 255</span> 		views_Spinner.setSelection(Global.def_view);
+<span class="lineno"> 256</span> 		
+<span class="lineno"> 257</span> 		Document doc = new Document();
+<span class="lineno"> 258</span>         doc.Open(<span class="errorspan">"/sdcard/2-10_Warranty_Form_New_Homeowner_Enrollment.pdf", null);</span>
+<span class="lineno"> 259</span>         doc.SaveAs("/sdcard/2-10_Warranty_Form_New_Homeowner_Enrollment - Page 1.pdf", true);
+<span class="lineno"> 260</span>         doc.Close();
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFReaderAct.java">../../src/main/java/com/radaee/reader/PDFReaderAct.java</a>:259</span>: <span class="message">Do not hardcode "/sdcard/"; use <code>Environment.getExternalStorageDirectory().getPath()</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 256</span> 		
+<span class="lineno"> 257</span> 		Document doc = new Document();
+<span class="lineno"> 258</span>         doc.Open("/sdcard/2-10_Warranty_Form_New_Homeowner_Enrollment.pdf", null);
+<span class="lineno"> 259</span>         doc.SaveAs(<span class="errorspan">"/sdcard/2-10_Warranty_Form_New_Homeowner_Enrollment - Page 1.pdf", true);</span>
+<span class="lineno"> 260</span>         doc.Close();
+<span class="lineno"> 261</span> 		
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFTestAct.java">../../src/main/java/com/radaee/reader/PDFTestAct.java</a>:170</span>: <span class="message">Do not hardcode "/sdcard/"; use <code>Environment.getExternalStorageDirectory().getPath()</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 167</span>         Global.Init( this );
+<span class="lineno"> 168</span>         //concat_pdf( "/sdcard/testImport.pdf", "/sdcard/test_images.pdf" );
+<span class="lineno"> 169</span>         
+<span class="lineno"> 170</span> 		String file = <span class="errorspan">"/sdcard/test.pdf";</span>
+<span class="lineno"> 171</span> 		String file_cache = Global.tmp_path + "/temp.dat";
+<span class="lineno"> 172</span> 
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Hardcoded reference to <code>/sdcard</code></div>
+<div class="explanation">
+Your code should not reference the <code>/sdcard</code> path directly; instead use <code>Environment.getExternalStorageDirectory().getPath()</code>.<br/>
+<br/>
+Similarly, do not reference the <code>/data/data/</code> path directly; it can vary in multi-user scenarios. Instead, use <code>Context.getFilesDir().getPath()</code>.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal">http://developer.android.com/guide/topics/data/data-storage.html#filesExternal</a>
+</div><br/>To suppress this error, use the issue id "SdCardPath" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedAttribute"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UnusedAttribute: Attribute unused on older versions</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:9</span>: <span class="message">Attribute <code>xlargeScreens</code> is only used in API level 9 and higher (current min is 8)</span><br /><pre class="errorlines">
+<span class="lineno">   6</span> 
+<span class="lineno">   7</span>     &lt;uses-sdk android:minSdkVersion="8" />
+<span class="lineno">   8</span>     &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<span class="lineno">   9</span>     &lt;supports-screens android:largeScreens="true" android:anyDensity="true" android:normalScreens="true" android:smallScreens="true" android:resizeable="true" <span class="errorspan">android:xlargeScreens="true"/></span>
+<span class="lineno">  10</span>     &lt;application
+<span class="lineno">  11</span>         android:icon="@drawable/ic_launcher"
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Attribute unused on older versions.</div>
+<div class="explanation">
+This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the the <code>minSdkVersion</code> attribute).<br/>
+<br/>
+This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.<br/>
+<br/>
+Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new <code>&lt;tag></code> element in layouts introduced in API 21.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedAttribute" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="InflateParams"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">InflateParams: Layout Inflation without a Parent</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutAct.java">../../src/main/java/com/radaee/reader/PDFLayoutAct.java</a>:62</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno">  59</span>         super.onCreate(savedInstanceState);
+<span class="lineno">  60</span>         getWindow().setFormat(PixelFormat.RGBA_8888);
+<span class="lineno">  61</span>         Global.Init( this );
+<span class="lineno">  62</span> 		m_layout = (RelativeLayout)LayoutInflater.from(this).inflate(R.layout.pdf_layout, <span class="errorspan">null);</span>
+<span class="lineno">  63</span> 		m_view = (PDFLayoutView)m_layout.findViewById(R.id.view);
+<span class="lineno">  64</span>         LinearLayout bar_cmd = (LinearLayout)m_layout.findViewById(R.id.bar_cmd);
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutAct.java">../../src/main/java/com/radaee/reader/PDFLayoutAct.java</a>:153</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 150</span>     }
+<span class="lineno"> 151</span>     private void InputPassword(PDFGridItem item)
+<span class="lineno"> 152</span>     {
+<span class="lineno"> 153</span> 		LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_password, <span class="errorspan">null);</span>
+<span class="lineno"> 154</span> 		final EditText tpassword = (EditText)layout.findViewById(R.id.txt_password);
+<span class="lineno"> 155</span> 		final PDFGridItem gitem = item;
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutAct.java">../../src/main/java/com/radaee/reader/PDFLayoutAct.java</a>:449</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 446</span> 	}
+<span class="lineno"> 447</span> 	private void onEdit()
+<span class="lineno"> 448</span> 	{
+<span class="lineno"> 449</span> 		LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_note, <span class="errorspan">null);</span>
+<span class="lineno"> 450</span> 		final EditText subj = (EditText)layout.findViewById(R.id.txt_subj);
+<span class="lineno"> 451</span> 		final EditText content = (EditText)layout.findViewById(R.id.txt_content);
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutAct.java">../../src/main/java/com/radaee/reader/PDFLayoutAct.java</a>:635</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 632</span> 	}
+<span class="lineno"> 633</span> 	public void OnSelectEnd(String text)
+<span class="lineno"> 634</span> 	{
+<span class="lineno"> 635</span> 		LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_text, <span class="errorspan">null);</span>
+<span class="lineno"> 636</span> 		final RadioGroup rad_group = (RadioGroup)layout.findViewById(R.id.rad_group);
+<span class="lineno"> 637</span> 		final String sel_text = text;
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutView.java">../../src/main/java/com/radaee/reader/PDFLayoutView.java</a>:268</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 265</span> 	public PDFLayoutView(Context context)
+<span class="lineno"> 266</span> 	{
+<span class="lineno"> 267</span> 		super(context);
+<span class="lineno"> 268</span> 		m_pEdit = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_edit, <span class="errorspan">null) );</span>
+<span class="lineno"> 269</span> 		m_pCombo = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_combo, null));
+<span class="lineno"> 270</span> 		m_pEdit.setOnDismissListener(this);
+</pre>
+<button id="InflateParamsDivLink" onclick="reveal('InflateParamsDiv');" />+ 9 More Occurrences...</button>
+<div id="InflateParamsDiv" style="display: none">
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutView.java">../../src/main/java/com/radaee/reader/PDFLayoutView.java</a>:269</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 266</span> 	{
+<span class="lineno"> 267</span> 		super(context);
+<span class="lineno"> 268</span> 		m_pEdit = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_edit, null) );
+<span class="lineno"> 269</span> 		m_pCombo = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_combo, <span class="errorspan">null));</span>
+<span class="lineno"> 270</span> 		m_pEdit.setOnDismissListener(this);
+<span class="lineno"> 271</span> 		m_pCombo.setOnDismissListener(this);
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutView.java">../../src/main/java/com/radaee/reader/PDFLayoutView.java</a>:286</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 283</span> 	public PDFLayoutView(Context context, AttributeSet attrs)
+<span class="lineno"> 284</span> 	{
+<span class="lineno"> 285</span> 		super(context, attrs);
+<span class="lineno"> 286</span> 		m_pEdit = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_edit, <span class="errorspan">null) );</span>
+<span class="lineno"> 287</span> 		m_pCombo = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_combo, null));
+<span class="lineno"> 288</span> 		m_pEdit.setOnDismissListener(this);
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutView.java">../../src/main/java/com/radaee/reader/PDFLayoutView.java</a>:287</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 284</span> 	{
+<span class="lineno"> 285</span> 		super(context, attrs);
+<span class="lineno"> 286</span> 		m_pEdit = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_edit, null) );
+<span class="lineno"> 287</span> 		m_pCombo = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_combo, <span class="errorspan">null));</span>
+<span class="lineno"> 288</span> 		m_pEdit.setOnDismissListener(this);
+<span class="lineno"> 289</span> 		m_pCombo.setOnDismissListener(this);
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFReader.java">../../src/main/java/com/radaee/reader/PDFReader.java</a>:113</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 110</span> 	{
+<span class="lineno"> 111</span> 		super(context, attrs);
+<span class="lineno"> 112</span> 		//this.setBackgroundColor(0xFFCCCCCC);
+<span class="lineno"> 113</span> 		m_pEdit = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_edit, <span class="errorspan">null) );</span>
+<span class="lineno"> 114</span> 		m_pCombo = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_combo, null));
+<span class="lineno"> 115</span> 		m_pEdit.setOnDismissListener(this);
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFReader.java">../../src/main/java/com/radaee/reader/PDFReader.java</a>:114</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 111</span> 		super(context, attrs);
+<span class="lineno"> 112</span> 		//this.setBackgroundColor(0xFFCCCCCC);
+<span class="lineno"> 113</span> 		m_pEdit = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_edit, null) );
+<span class="lineno"> 114</span> 		m_pCombo = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_combo, <span class="errorspan">null));</span>
+<span class="lineno"> 115</span> 		m_pEdit.setOnDismissListener(this);
+<span class="lineno"> 116</span> 		m_pCombo.setOnDismissListener(this);
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFReaderAct.java">../../src/main/java/com/radaee/reader/PDFReaderAct.java</a>:86</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno">  83</span>         getWindow().setFormat(PixelFormat.RGBA_8888);
+<span class="lineno">  84</span>         Global.Init( this );
+<span class="lineno">  85</span>         
+<span class="lineno">  86</span> 		m_layout = (RelativeLayout)LayoutInflater.from(this).inflate(R.layout.reader, <span class="errorspan">null);</span>
+<span class="lineno">  87</span> 		m_reader = (PDFReader)m_layout.findViewById(R.id.view);
+<span class="lineno">  88</span> 		m_thumb = (PDFThumbView)m_layout.findViewById(R.id.thumbs);
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFReaderAct.java">../../src/main/java/com/radaee/reader/PDFReaderAct.java</a>:190</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 187</span>     }
+<span class="lineno"> 188</span>     private void InputPassword(PDFGridItem item)
+<span class="lineno"> 189</span>     {
+<span class="lineno"> 190</span> 		LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_password, <span class="errorspan">null);</span>
+<span class="lineno"> 191</span> 		final EditText tpassword = (EditText)layout.findViewById(R.id.txt_password);
+<span class="lineno"> 192</span> 		final PDFGridItem gitem = item;
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFReaderAct.java">../../src/main/java/com/radaee/reader/PDFReaderAct.java</a>:525</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 522</span> 	}
+<span class="lineno"> 523</span> 	private void onEdit()
+<span class="lineno"> 524</span> 	{
+<span class="lineno"> 525</span> 		LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_note, <span class="errorspan">null);</span>
+<span class="lineno"> 526</span> 		final EditText subj = (EditText)layout.findViewById(R.id.txt_subj);
+<span class="lineno"> 527</span> 		final EditText content = (EditText)layout.findViewById(R.id.txt_content);
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFReaderAct.java">../../src/main/java/com/radaee/reader/PDFReaderAct.java</a>:728</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno"> 725</span> 	}
+<span class="lineno"> 726</span> 	public void OnSelectEnd(String text)
+<span class="lineno"> 727</span> 	{
+<span class="lineno"> 728</span> 		LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_text, <span class="errorspan">null);</span>
+<span class="lineno"> 729</span> 		final RadioGroup rad_group = (RadioGroup)layout.findViewById(R.id.rad_group);
+<span class="lineno"> 730</span> 		final String sel_text = text;
+</pre>
+</div>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Layout Inflation without a Parent.</div>
+<div class="explanation">
+When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://www.doubleencore.com/2013/05/layout-inflation-as-intended">http://www.doubleencore.com/2013/05/layout-inflation-as-intended</a>
+</div><br/>To suppress this error, use the issue id "InflateParams" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="GradleOverrides"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">GradleOverrides: Value overridden by Gradle build script</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:7</span>: <span class="message">This <code>minSdkVersion</code> value (<code>8</code>) is not used; it is always overridden by the value specified in the Gradle build script (<code>8</code>)</span><br /><pre class="errorlines">
+<span class="lineno">   4</span>     android:versionCode="1"
+<span class="lineno">   5</span>     android:versionName="1.0" >
+<span class="lineno">   6</span> 
+<span class="lineno">   7</span>     &lt;uses-sdk <span class="errorspan">android:minSdkVersion="8" /></span>
+<span class="lineno">   8</span>     &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<span class="lineno">   9</span>     &lt;supports-screens android:largeScreens="true" android:anyDensity="true" android:normalScreens="true" android:smallScreens="true" android:resizeable="true" android:xlargeScreens="true"/>
+</pre>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Value overridden by Gradle build script.</div>
+<div class="explanation">
+The value of (for example) <code>minSdkVersion</code> is only used if it is not specified in the <code>build.gradle</code> build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "GradleOverrides" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="MangledCRLF"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">MangledCRLF: Mangled file line endings</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/dlg_note.xml">../../src/main/res/layout/dlg_note.xml</a>:6</span>: <span class="message">Incorrect line ending: found carriage return (<code>\r</code>) without corresponding newline (<code>\n</code>)</span><br /><pre class="errorlines">
+<span class="lineno">   3</span>     android:id="@+id/dlg_show_note"
+<span class="lineno">   4</span>     android:layout_width="match_parent"
+<span class="lineno">   5</span>     android:layout_height="match_parent"
+<span class="lineno">   6</span> <span class="errorspan">    android:orientation="vertical" ></span>
+<span class="lineno">   7</span> 
+<span class="lineno">   8</span>     &lt;EditText
+</pre>
+<span class="location"><a href="../../src/main/res/layout/dlg_text.xml">../../src/main/res/layout/dlg_text.xml</a>:6</span>: <span class="message">Incorrect line ending: found carriage return (<code>\r</code>) without corresponding newline (<code>\n</code>)</span><br /><pre class="errorlines">
+<span class="lineno">   3</span>     android:id="@+id/dlg_show_note"
+<span class="lineno">   4</span>     android:layout_width="match_parent"
+<span class="lineno">   5</span>     android:layout_height="match_parent"
+<span class="lineno">   6</span> <span class="errorspan">    android:orientation="vertical" ></span>
+<span class="lineno">   7</span> 
+<span class="lineno">   8</span>     &lt;RadioGroup
+</pre>
+<span class="location"><a href="../../src/main/res/layout/main.xml">../../src/main/res/layout/main.xml</a>:43</span>: <span class="message">Incorrect line ending: found carriage return (<code>\r</code>) without corresponding newline (<code>\n</code>)</span><br /><pre class="errorlines">
+<span class="lineno">  40</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  41</span>             android:layout_width="36dp"
+<span class="lineno">  42</span>             android:layout_height="wrap_content"
+<span class="lineno">  43</span> <span class="errorspan">            android:text="@string/s_next" /></span>
+<span class="lineno">  44</span> 
+<span class="lineno">  45</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pop_edit.xml">../../src/main/res/layout/pop_edit.xml</a>:5</span>: <span class="message">Incorrect line ending: found carriage return (<code>\r</code>) without corresponding newline (<code>\n</code>)</span><br /><pre class="errorlines">
+<span class="lineno">   2</span> &lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<span class="lineno">   3</span>     android:layout_width="match_parent"
+<span class="lineno">   4</span>     android:layout_height="match_parent"
+<span class="lineno">   5</span> <span class="errorspan">    android:orientation="vertical" ></span>
+<span class="lineno">   6</span> 
+<span class="lineno">   7</span>     &lt;EditText
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 2 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: Mangled file line endings.</div>
+<div class="explanation">
+On Windows, line endings are typically recorded as carriage return plus newline: \r\n.<br/>
+<br/>
+This detector looks for invalid line endings with repeated carriage return characters (without newlines). Previous versions of the ADT plugin could accidentally introduce these into the file, and when editing the file, the editor could produce confusing visual artifacts.
+</div>
+<br/><div class="moreinfo">More info: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421">https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421</a>
+</div><br/>To suppress this error, use the issue id "MangledCRLF" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="PxUsage"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">PxUsage: Using 'px' dimension</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/dlg_note.xml">../../src/main/res/layout/dlg_note.xml</a>:22</span>: <span class="message">Avoid using "<code>px</code>" as units; use "<code>dp</code>" instead</span><br /><pre class="errorlines">
+<span class="lineno">  19</span>         android:layout_width="match_parent"
+<span class="lineno">  20</span>         <span class="errorspan">android:layout_height="200px"</span>
+<span class="lineno">  21</span>         android:ems="10"
+<span class="lineno">  22</span>         android:inputType="textMultiLine" />
+<span class="lineno">  23</span> 
+<span class="lineno">  24</span> &lt;/LinearLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/main.xml">../../src/main/res/layout/main.xml</a>:61</span>: <span class="message">Avoid using "<code>px</code>" as units; use "<code>dp</code>" instead</span><br /><pre class="errorlines">
+<span class="lineno">  58</span>         android:layout_alignParentRight="true" />
+<span class="lineno">  59</span> 
+<span class="lineno">  60</span>     &lt;LinearLayout
+<span class="lineno">  61</span>         android:id="@+id/bar_cmd"
+<span class="lineno">  62</span>         android:layout_width="match_parent"
+<span class="lineno">  63</span>         android:layout_height="40dp"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 2 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using 'px' dimension.</div>
+<div class="explanation">
+For performance reasons and to keep the code simpler, the Android system uses pixels as the standard unit for expressing dimension or coordinate values. That means that the dimensions of a view are always expressed in the code using pixels, but always based on the current screen density. For instance, if <code>myView.getWidth()</code> returns 10, the view is 10 pixels wide on the current screen, but on a device with a higher density screen, the value returned might be 15. If you use pixel values in your application code to work with bitmaps that are not pre-scaled for the current screen density, you might need to scale the pixel values that you use in your code to match the un-scaled bitmap source.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html#screen-independence">http://developer.android.com/guide/practices/screens_support.html#screen-independence</a>
+</div><br/>To suppress this error, use the issue id "PxUsage" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Security"></a>
+<div class="category"><a href="#" title="Return to top">Security</a><div class="categorySeparator"></div>
+</div>
+<a name="TrulyRandom"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">TrulyRandom: Weak RNG</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/radaee/util/PDFAESEncOld.java">../../src/main/java/com/radaee/util/PDFAESEncOld.java</a>:71</span>: <span class="message">Potentially insecure random numbers on Android 4.3 and older. Read https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html for more info.</span><br /><pre class="errorlines">
+<span class="lineno">  68</span> 			Cipher cipher = Cipher.getInstance("AES/CBC/PKCS7Padding");
+<span class="lineno">  69</span> 			byte[] ivbytes = new byte[]{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+<span class="lineno">  70</span> 			IvParameterSpec iv = new IvParameterSpec(ivbytes);//need IV in CBC mode
+<span class="lineno">  71</span> 			cipher.<span class="errorspan">init(Cipher.ENCRYPT_MODE, skey, iv);</span>
+<span class="lineno">  72</span> 
+<span class="lineno">  73</span> 			byte[] src = new byte[4096];
+</pre>
+</div>
+<div class="metadata">Priority: 9 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Weak RNG.</div>
+<div class="explanation">
+Key generation, signing, encryption, and random number generation may not receive cryptographically strong values due to improper initialization of the underlying PRNG on Android 4.3 and below.<br/>
+<br/>
+If your application relies on cryptographically secure random number generation you should apply the workaround described in https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html .<br/>
+<br/>
+This lint rule is mostly informational; it does not accurately detect whether cryptographically secure RNG is required, or whether the workaround has already been applied. After reading the blog entry and updating your code if necessary, you can disable this lint issue.
+</div>
+<br/><div class="moreinfo">More info: <a href="https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html">https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html</a>
+</div><br/>To suppress this error, use the issue id "TrulyRandom" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="AllowBackup"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">AllowBackup: Missing <code>allowBackup</code> attribute</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:10</span>: <span class="message">Should explicitly set <code>android:allowBackup</code> to <code>true</code> or <code>false</code> (it's <code>true</code> by default, and that can have some security implications for the application's data)</span><br /><pre class="errorlines">
+<span class="lineno">   7</span>     &lt;uses-sdk android:minSdkVersion="8" />
+<span class="lineno">   8</span>     &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<span class="lineno">   9</span>     &lt;supports-screens android:largeScreens="true" android:anyDensity="true" android:normalScreens="true" android:smallScreens="true" android:resizeable="true" android:xlargeScreens="true"/>
+<span class="lineno">  10</span>     <span class="errorspan">&lt;application</span>
+<span class="lineno">  11</span>         android:icon="@drawable/ic_launcher"
+<span class="lineno">  12</span>         android:label="@string/app_name" >
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing <code>allowBackup</code> attribute.</div>
+<div class="explanation">
+The allowBackup attribute determines if an application's data can be backed up and restored. It is documented at <a href="http://developer.android.com/reference/android/R.attr.html#allowBackup">http://developer.android.com/reference/android/R.attr.html#allowBackup</a><br/>
+<br/>
+By default, this flag is set to <code>true</code>. When this flag is set to <code>true</code>, application data can be backed up and restored by the user using <code>adb backup</code> and <code>adb restore</code>.<br/>
+<br/>
+This may have security consequences for an application. <code>adb backup</code> allows users who have enabled USB debugging to copy application data off of the device. Once backed up, all application data can be read by the user. <code>adb restore</code> allows creation of application data from a source specified by the user. Following a restore, applications should not assume that the data, file permissions, and directory permissions were created by the application itself.<br/>
+<br/>
+Setting <code>allowBackup="false"</code> opts an application out of both backup and restore.<br/>
+<br/>
+To fix this warning, decide whether your application should support backup, and explicitly set <code>android:allowBackup=(true|false)"</code>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/android/R.attr.html#allowBackup">http://developer.android.com/reference/android/R.attr.html#allowBackup</a>
+</div><br/>To suppress this error, use the issue id "AllowBackup" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Performance"></a>
+<div class="category"><a href="#" title="Return to top">Performance</a><div class="categorySeparator"></div>
+</div>
+<a name="DrawAllocation"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">DrawAllocation: Memory allocations within drawing code</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFCrop.java">../../src/main/java/com/radaee/reader/PDFCrop.java</a>:90</span>: <span class="message">Avoid object allocations during draw/layout operations (preallocate and reuse instead)</span><br /><pre class="errorlines">
+<span class="lineno">  87</span> 	{
+<span class="lineno">  88</span> 		if( m_doc != null )
+<span class="lineno">  89</span> 		{
+<span class="lineno">  90</span> 			BMP bmp = <span class="errorspan">new BMP();</span>
+<span class="lineno">  91</span> 			bmp.Create(bitmap);
+<span class="lineno">  92</span> 			float w = m_doc.GetPageWidth(0) * ratio;
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFInk.java">../../src/main/java/com/radaee/reader/PDFInk.java</a>:49</span>: <span class="message">Avoid object allocations during draw/layout operations (preallocate and reuse instead)</span><br /><pre class="errorlines">
+<span class="lineno">  46</span> 	{
+<span class="lineno">  47</span> 		if( ink == null ) return;
+<span class="lineno">  48</span> 		bitmap.eraseColor(0);
+<span class="lineno">  49</span> 		BMP bmp = <span class="errorspan">new BMP();</span>
+<span class="lineno">  50</span> 		bmp.Create(bitmap);
+<span class="lineno">  51</span> 		ink.OnDraw(bmp);
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutView.java">../../src/main/java/com/radaee/reader/PDFLayoutView.java</a>:506</span>: <span class="message">Avoid object allocations during draw/layout operations (preallocate and reuse instead)</span><br /><pre class="errorlines">
+<span class="lineno"> 503</span> 			}
+<span class="lineno"> 504</span> 		}
+<span class="lineno"> 505</span> 		ActivityManager mgr = (ActivityManager)getContext().getSystemService(Context.ACTIVITY_SERVICE);
+<span class="lineno"> 506</span> 		ActivityManager.MemoryInfo info = <span class="errorspan">new ActivityManager.MemoryInfo();</span>
+<span class="lineno"> 507</span> 		mgr.getMemoryInfo(info);
+<span class="lineno"> 508</span> 		m_info_paint.setARGB(255, 255, 0, 0);
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFReader.java">../../src/main/java/com/radaee/reader/PDFReader.java</a>:1052</span>: <span class="message">Avoid object allocations during draw/layout operations (preallocate and reuse instead)</span><br /><pre class="errorlines">
+<span class="lineno">1049</span> 			m_ink.OnDraw(canvas, 0, 0 );
+<span class="lineno">1050</span> 		}
+<span class="lineno">1051</span> 		ActivityManager mgr = (ActivityManager)getContext().getSystemService(Context.ACTIVITY_SERVICE);
+<span class="lineno">1052</span> 		ActivityManager.MemoryInfo info = <span class="errorspan">new ActivityManager.MemoryInfo();</span>
+<span class="lineno">1053</span> 		mgr.getMemoryInfo(info);
+<span class="lineno">1054</span> 		m_info_paint.setARGB(255, 255, 0, 0);
+</pre>
+</div>
+<div class="metadata">Priority: 9 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Memory allocations within drawing code.</div>
+<div class="explanation">
+You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.<br/>
+<br/>
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.<br/>
+<br/>
+Some methods allocate memory on your behalf (such as <code>Bitmap.create</code>), and these should be handled in the same way.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "DrawAllocation" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="HandlerLeak"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">HandlerLeak: Handler reference leaks</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/radaee/util/PDFGridAdt.java">../../src/main/java/com/radaee/util/PDFGridAdt.java</a>:17</span>: <span class="message">This Handler class should be static or leaks might occur (com.radaee.util.PDFGridAdt.1)</span><br /><pre class="errorlines">
+<span class="lineno">  14</span> public class PDFGridAdt extends BaseAdapter
+<span class="lineno">  15</span> {
+<span class="lineno">  16</span> 	private Context m_context;
+<span class="lineno">  17</span> 	private Handler m_hand_ui = new <span class="errorspan">Handler()</span>
+<span class="lineno">  18</span> 	{
+<span class="lineno">  19</span> 		public void handleMessage(Message msg)
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/util/SnatchAdt.java">../../src/main/java/com/radaee/util/SnatchAdt.java</a>:58</span>: <span class="message">This Handler class should be static or leaks might occur (com.radaee.util.SnatchAdt.1)</span><br /><pre class="errorlines">
+<span class="lineno">  55</span> 	private DataSetObserver m_obs;
+<span class="lineno">  56</span> 	private Context m_context;
+<span class="lineno">  57</span> 	private boolean canceling = false;
+<span class="lineno">  58</span> 	private Handler m_hand_ui = new <span class="errorspan">Handler()</span>
+<span class="lineno">  59</span> 	{
+<span class="lineno">  60</span> 		public void handleMessage(Message msg)
+</pre>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Handler reference leaks.</div>
+<div class="explanation">
+Since this Handler is declared as an inner class, it may prevent the outer class from being garbage collected. If the Handler is using a Looper or MessageQueue for a thread other than the main thread, then there is no issue. If the Handler is using the Looper or MessageQueue of the main thread, you need to fix your Handler declaration, as follows: Declare the Handler as a static class; In the outer class, instantiate a WeakReference to the outer class and pass this object to your Handler when you instantiate the Handler; Make all references to members of the outer class using the WeakReference object.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "HandlerLeak" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="FloatMath"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">FloatMath: Using <code>FloatMath</code> instead of <code>Math</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutView.java">../../src/main/java/com/radaee/reader/PDFLayoutView.java</a>:574</span>: <span class="message">Use <code>java.lang.Math#sqrt</code> instead of <code>android.util.FloatMath#sqrt()</code> since it is faster as of API 8</span><br /><pre class="errorlines">
+<span class="lineno"> 571</span> 				m_zoom_pos = m_layout.vGetPos( (int)m_hold_x, (int)m_hold_y );
+<span class="lineno"> 572</span> 				float dx = event.getX(0) - event.getX(1);
+<span class="lineno"> 573</span> 				float dy = event.getY(0) - event.getY(1);
+<span class="lineno"> 574</span> 				m_zoom_dis0 = FloatMath.<span class="errorspan">sqrt(dx * dx + dy * dy);</span>
+<span class="lineno"> 575</span> 				m_zoom_scale = m_layout.vGetZoom();
+<span class="lineno"> 576</span> 				m_status = STA_ZOOM;
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutView.java">../../src/main/java/com/radaee/reader/PDFLayoutView.java</a>:593</span>: <span class="message">Use <code>java.lang.Math#sqrt</code> instead of <code>android.util.FloatMath#sqrt()</code> since it is faster as of API 8</span><br /><pre class="errorlines">
+<span class="lineno"> 590</span> 			{
+<span class="lineno"> 591</span> 				float dx = event.getX(0) - event.getX(1);
+<span class="lineno"> 592</span> 				float dy = event.getY(0) - event.getY(1);
+<span class="lineno"> 593</span> 				float dis1 = FloatMath.<span class="errorspan">sqrt(dx * dx + dy * dy);</span>
+<span class="lineno"> 594</span> 				m_layout.vZoomSet((int)m_hold_x, (int)m_hold_y, m_zoom_pos, m_zoom_scale * dis1 / m_zoom_dis0);
+<span class="lineno"> 595</span> 				invalidate();
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutView.java">../../src/main/java/com/radaee/reader/PDFLayoutView.java</a>:605</span>: <span class="message">Use <code>java.lang.Math#sqrt</code> instead of <code>android.util.FloatMath#sqrt()</code> since it is faster as of API 8</span><br /><pre class="errorlines">
+<span class="lineno"> 602</span> 			{
+<span class="lineno"> 603</span> 				float dx = event.getX(0) - event.getX(1);
+<span class="lineno"> 604</span> 				float dy = event.getY(0) - event.getY(1);
+<span class="lineno"> 605</span> 				float dis1 = FloatMath.<span class="errorspan">sqrt(dx * dx + dy * dy);</span>
+<span class="lineno"> 606</span> 				m_layout.vZoomSet((int)m_hold_x, (int)m_hold_y, m_zoom_pos, m_zoom_scale * dis1 / m_zoom_dis0);
+<span class="lineno"> 607</span> 				m_hold_x = -10000;
+</pre>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using <code>FloatMath</code> instead of <code>Math</code></div>
+<div class="explanation">
+In older versions of Android, using <code>android.util.FloatMath</code> was recommended for performance reasons when operating on floats. However, on modern hardware doubles are just as fast as float (though they take more memory), and in recent versions of Android, <code>FloatMath</code> is actually slower than using <code>java.lang.Math</code> due to the way the JIT optimizes <code>java.lang.Math</code>. Therefore, you should use <code>Math</code> instead of <code>FloatMath</code> if you are only targeting Froyo and above.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/design/performance.html#avoidfloat">http://developer.android.com/guide/practices/design/performance.html#avoidfloat</a>
+</div><br/>To suppress this error, use the issue id "FloatMath" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="InefficientWeight"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">InefficientWeight: Inefficient layout weight</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/pop_edit.xml">../../src/main/res/layout/pop_edit.xml</a>:11</span>: <span class="message">Use a <code>layout_height</code> of <code>0dp</code> instead of <code>wrap_content</code> for better performance</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>         android:id="@+id/annot_text"
+<span class="lineno">   9</span>         android:layout_width="match_parent"
+<span class="lineno">  10</span>         <span class="errorspan">android:layout_height="wrap_content"</span>
+<span class="lineno">  11</span>         android:layout_weight="0.23"
+<span class="lineno">  12</span>         android:ems="10" >
+<span class="lineno">  13</span> 
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Inefficient layout weight.</div>
+<div class="explanation">
+When only a single widget in a LinearLayout defines a weight, it is more efficient to assign a width/height of <code>0dp</code> to it since it will absorb all the remaining space anyway. With a declared width/height of <code>0dp</code> it does not have to measure its own size first.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "InefficientWeight" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedResources"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UnusedResources: Unused resources</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/drawable-hdpi/folder.png">../../src/main/res/drawable-hdpi/folder.png</a></span>: <span class="message">The resource <code>R.drawable.folder</code> appears to be unused</span><br />
+<ul></ul><button id="Location1DivLink" onclick="reveal('Location1Div');" />+ 3 Additional Locations...</button>
+<div id="Location1Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/folder.png">../../src/main/res/drawable-ldpi/folder.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/folder.png">../../src/main/res/drawable-mdpi/folder.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-xhdpi/folder.png">../../src/main/res/drawable-xhdpi/folder.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/folder.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/folder.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/folder.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/folder.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/layout/main.xml">../../src/main/res/layout/main.xml</a></span>: <span class="message">The resource <code>R.layout.main</code> appears to be unused</span><br />
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:15</span>: <span class="message">The resource <code>R.color.clr_back</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  12</span>     &lt;string name="s_find">the&lt;/string>
+<span class="lineno">  13</span>     &lt;string name="s_act">Do&lt;/string>
+<span class="lineno">  14</span>     &lt;string name="s_saveas">Save as&lt;/string>
+<span class="lineno">  15</span>     &lt;color <span class="errorspan">name="clr_back">#FFCCCC80&lt;/color></span>
+<span class="lineno">  16</span>     &lt;string name="s_edit">Edit&lt;/string>
+<span class="lineno">  17</span>     &lt;string name="views">Choose a view&lt;/string>
+</pre>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unused resources.</div>
+<div class="explanation">
+Unused resources make applications larger and slow down builds.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedResources" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UselessParent"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UselessParent: Useless parent layout</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/dlg_text.xml">../../src/main/res/layout/dlg_text.xml</a>:11</span>: <span class="message">This <code>RadioGroup</code> layout or its <code>LinearLayout</code> parent is possibly useless</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>     <span class="errorspan">&lt;RadioGroup</span>
+<span class="lineno">   9</span>         android:id="@+id/rad_group"
+<span class="lineno">  10</span>         android:layout_width="match_parent"
+<span class="lineno">  11</span>         android:layout_height="wrap_content" >
+<span class="lineno">  12</span> 
+<span class="lineno">  13</span>         &lt;RadioButton
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 2 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Useless parent layout.</div>
+<div class="explanation">
+A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UselessParent" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability:Icons"></a>
+<div class="category"><a href="#" title="Return to top">Usability:Icons</a><div class="categorySeparator"></div>
+</div>
+<a name="IconDipSize"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconDipSize: Icon density-independent size validation</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/file03.png">../../src/main/res/drawable-xhdpi/file03.png</a></span>: <span class="message">The image <code>file03.png</code> varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/file03.png: 128x128 dp (96x96 px), drawable-mdpi/file03.png: 96x96 dp (96x96 px), drawable-hdpi/file03.png: 64x64 dp (96x96 px), drawable-xhdpi/file03.png: 48x48 dp (96x96 px)</span><br />
+<ul></ul><button id="Location1DivLink" onclick="reveal('Location1Div');" />+ 3 Additional Locations...</button>
+<div id="Location1Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/file03.png">../../src/main/res/drawable-hdpi/file03.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/file03.png">../../src/main/res/drawable-mdpi/file03.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/file03.png">../../src/main/res/drawable-ldpi/file03.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/file03.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/file03.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/file03.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/file03.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/file03.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/file03.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/file03.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/file03.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/folder.png">../../src/main/res/drawable-xhdpi/folder.png</a></span>: <span class="message">The image <code>folder.png</code> varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/folder.png: 128x128 dp (96x96 px), drawable-mdpi/folder.png: 96x96 dp (96x96 px), drawable-hdpi/folder.png: 64x64 dp (96x96 px), drawable-xhdpi/folder.png: 48x48 dp (96x96 px)</span><br />
+<ul></ul><button id="Location2DivLink" onclick="reveal('Location2Div');" />+ 3 Additional Locations...</button>
+<div id="Location2Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/folder.png">../../src/main/res/drawable-hdpi/folder.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/folder.png">../../src/main/res/drawable-mdpi/folder.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/folder.png">../../src/main/res/drawable-ldpi/folder.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/folder.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/folder.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/folder.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/folder.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/folder0.png">../../src/main/res/drawable-xhdpi/folder0.png</a></span>: <span class="message">The image <code>folder0.png</code> varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/folder0.png: 128x128 dp (96x96 px), drawable-mdpi/folder0.png: 96x96 dp (96x96 px), drawable-hdpi/folder0.png: 64x64 dp (96x96 px), drawable-xhdpi/folder0.png: 48x48 dp (96x96 px)</span><br />
+<ul></ul><button id="Location3DivLink" onclick="reveal('Location3Div');" />+ 3 Additional Locations...</button>
+<div id="Location3Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/folder0.png">../../src/main/res/drawable-hdpi/folder0.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/folder0.png">../../src/main/res/drawable-mdpi/folder0.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/folder0.png">../../src/main/res/drawable-ldpi/folder0.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/folder0.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/folder0.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/folder0.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/folder0.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/folder0.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/folder0.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/folder0.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/folder0.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/folder1.png">../../src/main/res/drawable-xhdpi/folder1.png</a></span>: <span class="message">The image <code>folder1.png</code> varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/folder1.png: 128x128 dp (96x96 px), drawable-mdpi/folder1.png: 96x96 dp (96x96 px), drawable-hdpi/folder1.png: 64x64 dp (96x96 px), drawable-xhdpi/folder1.png: 48x48 dp (96x96 px)</span><br />
+<ul></ul><button id="Location4DivLink" onclick="reveal('Location4Div');" />+ 3 Additional Locations...</button>
+<div id="Location4Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/folder1.png">../../src/main/res/drawable-hdpi/folder1.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/folder1.png">../../src/main/res/drawable-mdpi/folder1.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/folder1.png">../../src/main/res/drawable-ldpi/folder1.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/folder1.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/folder1.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/folder1.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/folder1.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/folder1.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/folder1.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/folder1.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/folder1.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/folder2.png">../../src/main/res/drawable-xhdpi/folder2.png</a></span>: <span class="message">The image <code>folder2.png</code> varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/folder2.png: 128x128 dp (96x96 px), drawable-mdpi/folder2.png: 96x96 dp (96x96 px), drawable-hdpi/folder2.png: 64x64 dp (96x96 px), drawable-xhdpi/folder2.png: 48x48 dp (96x96 px)</span><br />
+<ul></ul><button id="Location5DivLink" onclick="reveal('Location5Div');" />+ 3 Additional Locations...</button>
+<div id="Location5Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/folder2.png">../../src/main/res/drawable-hdpi/folder2.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/folder2.png">../../src/main/res/drawable-mdpi/folder2.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/folder2.png">../../src/main/res/drawable-ldpi/folder2.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/folder2.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/folder2.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/folder2.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/folder2.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/folder2.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/folder2.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/folder2.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/folder2.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/pdf_icon.png">../../src/main/res/drawable-xhdpi/pdf_icon.png</a></span>: <span class="message">The image <code>pdf_icon.png</code> varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/pdf_icon.png: 128x128 dp (96x96 px), drawable-mdpi/pdf_icon.png: 96x96 dp (96x96 px), drawable-hdpi/pdf_icon.png: 64x64 dp (96x96 px), drawable-xhdpi/pdf_icon.png: 48x48 dp (96x96 px)</span><br />
+<ul></ul><button id="Location6DivLink" onclick="reveal('Location6Div');" />+ 3 Additional Locations...</button>
+<div id="Location6Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/pdf_icon.png">../../src/main/res/drawable-hdpi/pdf_icon.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/pdf_icon.png">../../src/main/res/drawable-mdpi/pdf_icon.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/pdf_icon.png">../../src/main/res/drawable-ldpi/pdf_icon.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/pdf_icon.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/pdf_icon.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/pdf_icon.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/pdf_icon.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/pdf_icon.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/pdf_icon.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/pdf_icon.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/pdf_icon.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Icon density-independent size validation.</div>
+<div class="explanation">
+Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (<code>dip</code>) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "IconDipSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconDuplicatesConfig"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconDuplicatesConfig: Identical bitmaps across various configurations</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/file03.png">../../src/main/res/drawable-xhdpi/file03.png</a></span>: <span class="message">The <code>file03.png</code> icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi</span><br />
+<ul></ul><button id="Location1DivLink" onclick="reveal('Location1Div');" />+ 3 Additional Locations...</button>
+<div id="Location1Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/file03.png">../../src/main/res/drawable-mdpi/file03.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/file03.png">../../src/main/res/drawable-ldpi/file03.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/file03.png">../../src/main/res/drawable-hdpi/file03.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/file03.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/file03.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/file03.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/file03.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/file03.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/file03.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/file03.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/file03.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/folder.png">../../src/main/res/drawable-xhdpi/folder.png</a></span>: <span class="message">The <code>folder.png</code> icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi</span><br />
+<ul></ul><button id="Location2DivLink" onclick="reveal('Location2Div');" />+ 3 Additional Locations...</button>
+<div id="Location2Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/folder.png">../../src/main/res/drawable-mdpi/folder.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/folder.png">../../src/main/res/drawable-ldpi/folder.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/folder.png">../../src/main/res/drawable-hdpi/folder.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/folder.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/folder.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/folder.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/folder.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/folder.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/folder0.png">../../src/main/res/drawable-xhdpi/folder0.png</a></span>: <span class="message">The <code>folder0.png</code> icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi</span><br />
+<ul></ul><button id="Location3DivLink" onclick="reveal('Location3Div');" />+ 3 Additional Locations...</button>
+<div id="Location3Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/folder0.png">../../src/main/res/drawable-mdpi/folder0.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/folder0.png">../../src/main/res/drawable-ldpi/folder0.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/folder0.png">../../src/main/res/drawable-hdpi/folder0.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/folder0.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/folder0.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/folder0.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/folder0.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/folder0.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/folder0.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/folder0.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/folder0.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/folder1.png">../../src/main/res/drawable-xhdpi/folder1.png</a></span>: <span class="message">The <code>folder1.png</code> icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi</span><br />
+<ul></ul><button id="Location4DivLink" onclick="reveal('Location4Div');" />+ 3 Additional Locations...</button>
+<div id="Location4Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/folder1.png">../../src/main/res/drawable-mdpi/folder1.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/folder1.png">../../src/main/res/drawable-ldpi/folder1.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/folder1.png">../../src/main/res/drawable-hdpi/folder1.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/folder1.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/folder1.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/folder1.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/folder1.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/folder1.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/folder1.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/folder1.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/folder1.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/folder2.png">../../src/main/res/drawable-xhdpi/folder2.png</a></span>: <span class="message">The <code>folder2.png</code> icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi</span><br />
+<ul></ul><button id="Location5DivLink" onclick="reveal('Location5Div');" />+ 3 Additional Locations...</button>
+<div id="Location5Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/folder2.png">../../src/main/res/drawable-mdpi/folder2.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/folder2.png">../../src/main/res/drawable-ldpi/folder2.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/folder2.png">../../src/main/res/drawable-hdpi/folder2.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/folder2.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/folder2.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/folder2.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/folder2.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/folder2.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/folder2.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/folder2.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/folder2.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/drawable-xhdpi/pdf_icon.png">../../src/main/res/drawable-xhdpi/pdf_icon.png</a></span>: <span class="message">The <code>pdf_icon.png</code> icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi</span><br />
+<ul></ul><button id="Location6DivLink" onclick="reveal('Location6Div');" />+ 3 Additional Locations...</button>
+<div id="Location6Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-mdpi/pdf_icon.png">../../src/main/res/drawable-mdpi/pdf_icon.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-ldpi/pdf_icon.png">../../src/main/res/drawable-ldpi/pdf_icon.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/pdf_icon.png">../../src/main/res/drawable-hdpi/pdf_icon.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/pdf_icon.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/pdf_icon.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/pdf_icon.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/pdf_icon.png" /></a>
+</td><td><a href="../../src/main/res/drawable-mdpi/pdf_icon.png"><img border="0" align="top" src="../../src/main/res/drawable-mdpi/pdf_icon.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/pdf_icon.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/pdf_icon.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>mdpi</th><th>ldpi</th></tr>
+</table>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Identical bitmaps across various configurations.</div>
+<div class="explanation">
+If an icon is provided under different configuration parameters such as <code>drawable-hdpi</code> or <code>-v11</code>, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "IconDuplicatesConfig" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconMissingDensityFolder"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconMissingDensityFolder: Missing density folder</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res">../../src/main/res</a></span>: <span class="message">Missing density variation folders in <code>src/main/res</code>: drawable-xxhdpi, drawable-xxxhdpi</span><br />
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing density folder.</div>
+<div class="explanation">
+Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra-high, extra-extra-high). This lint check identifies folders which are missing, such as <code>drawable-hdpi</code>.<br/>
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable <code>ANDROID_LINT_INCLUDE_LDPI=true</code>. For more information on current density usage, see <a href="http://developer.android.com/resources/dashboard/screens.html">http://developer.android.com/resources/dashboard/screens.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconMissingDensityFolder" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability"></a>
+<div class="category"><a href="#" title="Return to top">Usability</a><div class="categorySeparator"></div>
+</div>
+<a name="TextFields"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">TextFields: Missing <code>inputType</code> or <code>hint</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/dlg_note.xml">../../src/main/res/layout/dlg_note.xml</a>:9</span>: <span class="message">This text field does not specify an <code>inputType</code> or a <code>hint</code></span><br /><pre class="errorlines">
+<span class="lineno">   6</span>     android:orientation="vertical" >
+<span class="lineno">   7</span> 
+<span class="lineno">   8</span>     <span class="errorspan">&lt;EditText</span>
+<span class="lineno">   9</span>         android:id="@+id/txt_subj"
+<span class="lineno">  10</span>         android:layout_width="match_parent"
+<span class="lineno">  11</span>         android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:22</span>: <span class="message">This text field does not specify an <code>inputType</code> or a <code>hint</code></span><br /><pre class="errorlines">
+<span class="lineno">  19</span>         android:layout_alignParentTop="false"
+<span class="lineno">  20</span>         android:layout_centerInParent="false" >
+<span class="lineno">  21</span> 
+<span class="lineno">  22</span>         <span class="errorspan">&lt;EditText</span>
+<span class="lineno">  23</span>             android:id="@+id/txt_find"
+<span class="lineno">  24</span>             android:layout_width="150dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pop_edit.xml">../../src/main/res/layout/pop_edit.xml</a>:8</span>: <span class="message">This text field does not specify an <code>inputType</code> or a <code>hint</code></span><br /><pre class="errorlines">
+<span class="lineno">   5</span>     android:orientation="vertical" >
+<span class="lineno">   6</span> 
+<span class="lineno">   7</span>     <span class="errorspan">&lt;EditText</span>
+<span class="lineno">   8</span>         android:id="@+id/annot_text"
+<span class="lineno">   9</span>         android:layout_width="match_parent"
+<span class="lineno">  10</span>         android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:31</span>: <span class="message">This text field does not specify an <code>inputType</code> or a <code>hint</code></span><br /><pre class="errorlines">
+<span class="lineno">  28</span>         android:layout_alignParentTop="false"
+<span class="lineno">  29</span>         android:layout_centerInParent="false" >
+<span class="lineno">  30</span> 
+<span class="lineno">  31</span>         <span class="errorspan">&lt;EditText</span>
+<span class="lineno">  32</span>             android:id="@+id/txt_find"
+<span class="lineno">  33</span>             android:layout_width="150dp"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 5 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing <code>inputType</code> or <code>hint</code></div>
+<div class="explanation">
+Providing an <code>inputType</code> attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). Similarly,a hint attribute displays a hint to the user for what is expected in the text field.<br/>
+<br/>
+The lint detector also looks at the <code>id</code> of the view, and if the id offers a hint of the purpose of the field (for example, the <code>id</code> contains the phrase <code>phone</code> or <code>email</code>), then lint will also ensure that the <code>inputType</code> contains the corresponding type attributes.<br/>
+<br/>
+If you really want to keep the text field generic, you can suppress this warning by setting <code>inputType="text"</code>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "TextFields" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Accessibility"></a>
+<div class="category"><a href="#" title="Return to top">Accessibility</a><div class="categorySeparator"></div>
+</div>
+<a name="ClickableViewAccessibility"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ClickableViewAccessibility: Accessibility in Custom Views</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFInk.java">../../src/main/java/com/radaee/reader/PDFInk.java</a>:55</span>: <span class="message">Custom view <code>com/radaee/reader/PDFInk</code> overrides <code>onTouchEvent</code> but not <code>performClick</code></span><br /><pre class="errorlines">
+<span class="lineno">  52</span> 		bmp.Free(bitmap);
+<span class="lineno">  53</span> 		canvas.drawBitmap(bitmap, 0, 0, null);
+<span class="lineno">  54</span> 	}
+<span class="lineno">  55</span> 	public boolean <span class="errorspan">onTouchEvent (MotionEvent event)</span>
+<span class="lineno">  56</span> 	{
+<span class="lineno">  57</span> 		switch( event.getActionMasked() )
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFLayoutView.java">../../src/main/java/com/radaee/reader/PDFLayoutView.java</a>:920</span>: <span class="message">Custom view <code>com/radaee/reader/PDFLayoutView</code> overrides <code>onTouchEvent</code> but not <code>performClick</code></span><br /><pre class="errorlines">
+<span class="lineno"> 917</span> 		return true;
+<span class="lineno"> 918</span> 	}
+<span class="lineno"> 919</span> 	@Override
+<span class="lineno"> 920</span> 	public boolean <span class="errorspan">onTouchEvent(MotionEvent event)</span>
+<span class="lineno"> 921</span> 	{
+<span class="lineno"> 922</span> 		if( m_layout == null ) return false;
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/PDFReader.java">../../src/main/java/com/radaee/reader/PDFReader.java</a>:1368</span>: <span class="message">Custom view <code>com/radaee/reader/PDFReader</code> overrides <code>onTouchEvent</code> but not <code>performClick</code></span><br /><pre class="errorlines">
+<span class="lineno">1365</span> 		return false;
+<span class="lineno">1366</span> 	}
+<span class="lineno">1367</span> 	@Override
+<span class="lineno">1368</span> 	public boolean <span class="errorspan">onTouchEvent(MotionEvent event)</span>
+<span class="lineno">1369</span> 	{
+<span class="lineno">1370</span> 		if( m_view == null ) return false;
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/util/PDFThumbView.java">../../src/main/java/com/radaee/util/PDFThumbView.java</a>:76</span>: <span class="message">Custom view <code>com/radaee/util/PDFThumbView</code> overrides <code>onTouchEvent</code> but not <code>performClick</code></span><br /><pre class="errorlines">
+<span class="lineno">  73</span> 			m_thumb.vResize(w, h);
+<span class="lineno">  74</span> 	}
+<span class="lineno">  75</span> 	@Override
+<span class="lineno">  76</span> 	public boolean <span class="errorspan">onTouchEvent(MotionEvent event)</span>
+<span class="lineno">  77</span> 	{
+<span class="lineno">  78</span> 		if( m_thumb == null ) return false;
+</pre>
+<span class="location"><a href="../../src/main/java/com/radaee/reader/ReaderController.java">../../src/main/java/com/radaee/reader/ReaderController.java</a>:55</span>: <span class="message">Custom view <code>com/radaee/reader/ReaderController</code> overrides <code>onTouchEvent</code> but not <code>performClick</code></span><br /><pre class="errorlines">
+<span class="lineno">  52</span>     }
+<span class="lineno">  53</span> 
+<span class="lineno">  54</span>     @Override
+<span class="lineno">  55</span> 	public boolean <span class="errorspan">onTouchEvent(MotionEvent event)</span>
+<span class="lineno">  56</span>     {
+<span class="lineno">  57</span>     	if( m_pdv != null )
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Accessibility</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Accessibility in Custom Views.</div>
+<div class="explanation">
+If a <code>View</code> that overrides <code>onTouchEvent</code> or uses an <code>OnTouchListener</code> does not also implement <code>performClick</code> and call it when clicks are detected, the <code>View</code> may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in <code>View#performClick</code> as some accessibility services invoke <code>performClick</code> when a click action should occur.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ClickableViewAccessibility" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Internationalization"></a>
+<div class="category"><a href="#" title="Return to top">Internationalization</a><div class="categorySeparator"></div>
+</div>
+<a name="HardcodedText"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">HardcodedText: Hardcoded text</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/dlg_text.xml">../../src/main/res/layout/dlg_text.xml</a>:21</span>: <span class="message">[I18N] Hardcoded string "Copy text to clipboard", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  18</span>             <span class="errorspan">android:text="Copy text to clipboard" /></span>
+<span class="lineno">  19</span> 
+<span class="lineno">  20</span>         &lt;RadioButton
+<span class="lineno">  21</span>             android:id="@+id/rad_highlight"
+<span class="lineno">  22</span>             android:layout_width="wrap_content"
+<span class="lineno">  23</span>             android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/dlg_text.xml">../../src/main/res/layout/dlg_text.xml</a>:27</span>: <span class="message">[I18N] Hardcoded string "Highlight texts", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  24</span>             <span class="errorspan">android:text="Highlight texts" /></span>
+<span class="lineno">  25</span> 
+<span class="lineno">  26</span>         &lt;RadioButton
+<span class="lineno">  27</span>             android:id="@+id/rad_underline"
+<span class="lineno">  28</span>             android:layout_width="wrap_content"
+<span class="lineno">  29</span>             android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/dlg_text.xml">../../src/main/res/layout/dlg_text.xml</a>:33</span>: <span class="message">[I18N] Hardcoded string "Underline", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  30</span>             <span class="errorspan">android:text="Underline" /></span>
+<span class="lineno">  31</span> 
+<span class="lineno">  32</span>         &lt;RadioButton
+<span class="lineno">  33</span>             android:id="@+id/rad_strikeout"
+<span class="lineno">  34</span>             android:layout_width="wrap_content"
+<span class="lineno">  35</span>             android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/dlg_text.xml">../../src/main/res/layout/dlg_text.xml</a>:39</span>: <span class="message">[I18N] Hardcoded string "StrikeOut", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  36</span>             <span class="errorspan">android:text="StrikeOut" /></span>
+<span class="lineno">  37</span> 
+<span class="lineno">  38</span> 	    &lt;RadioButton
+<span class="lineno">  39</span> 	        android:id="@+id/rad_squiggly"
+<span class="lineno">  40</span> 	        android:layout_width="wrap_content"
+<span class="lineno">  41</span> 	        android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/dlg_text.xml">../../src/main/res/layout/dlg_text.xml</a>:45</span>: <span class="message">[I18N] Hardcoded string "Squiggly", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  42</span> 	        <span class="errorspan">android:text="Squiggly" /></span>
+<span class="lineno">  43</span> 	        &lt;/RadioGroup>
+<span class="lineno">  44</span> 
+<span class="lineno">  45</span> 
+<span class="lineno">  46</span> &lt;/LinearLayout>
+
+</pre>
+<button id="HardcodedTextDivLink" onclick="reveal('HardcodedTextDiv');" />+ 33 More Occurrences...</button>
+<div id="HardcodedTextDiv" style="display: none">
+<span class="location"><a href="../../src/main/res/layout/main.xml">../../src/main/res/layout/main.xml</a>:120</span>: <span class="message">[I18N] Hardcoded string "Close", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 117</span> &lt;/RelativeLayout>
+
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:27</span>: <span class="message">[I18N] Hardcoded string "the", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  24</span>             android:layout_width="150dp"
+<span class="lineno">  25</span>             android:layout_height="40dp"
+<span class="lineno">  26</span>             android:ems="10"
+<span class="lineno">  27</span>             <span class="errorspan">android:text="the" /></span>
+<span class="lineno">  28</span> 
+<span class="lineno">  29</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:34</span>: <span class="message">[I18N] Hardcoded string "&lt;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  31</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  32</span>             android:layout_width="40dp"
+<span class="lineno">  33</span>             android:layout_height="wrap_content"
+<span class="lineno">  34</span>             <span class="errorspan">android:text="&amp;lt;" /></span>
+<span class="lineno">  35</span> 
+<span class="lineno">  36</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:41</span>: <span class="message">[I18N] Hardcoded string ">", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  38</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  39</span>             android:layout_width="40dp"
+<span class="lineno">  40</span>             android:layout_height="wrap_content"
+<span class="lineno">  41</span>             <span class="errorspan">android:text=">" /></span>
+<span class="lineno">  42</span> 
+<span class="lineno">  43</span>         &lt;/LinearLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:56</span>: <span class="message">[I18N] Hardcoded string "Ink", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  53</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  54</span>             android:layout_width="wrap_content"
+<span class="lineno">  55</span>             android:layout_height="wrap_content"
+<span class="lineno">  56</span>             <span class="errorspan">android:text="Ink" /></span>
+<span class="lineno">  57</span> 
+<span class="lineno">  58</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:63</span>: <span class="message">[I18N] Hardcoded string "Rect", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  60</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  61</span>             android:layout_width="wrap_content"
+<span class="lineno">  62</span>             android:layout_height="wrap_content"
+<span class="lineno">  63</span>             <span class="errorspan">android:text="Rect" /></span>
+<span class="lineno">  64</span>         &lt;Button
+<span class="lineno">  65</span>             android:id="@+id/btn_oval"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:69</span>: <span class="message">[I18N] Hardcoded string "Oval", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  66</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  67</span>             android:layout_width="wrap_content"
+<span class="lineno">  68</span>             android:layout_height="wrap_content"
+<span class="lineno">  69</span>             <span class="errorspan">android:text="Oval" /></span>
+<span class="lineno">  70</span>         
+<span class="lineno">  71</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:76</span>: <span class="message">[I18N] Hardcoded string "Note", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  73</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  74</span>             android:layout_width="wrap_content"
+<span class="lineno">  75</span>             android:layout_height="wrap_content"
+<span class="lineno">  76</span>             <span class="errorspan">android:text="Note" /></span>
+<span class="lineno">  77</span> 
+<span class="lineno">  78</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:83</span>: <span class="message">[I18N] Hardcoded string "Line", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  80</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  81</span>             android:layout_width="wrap_content"
+<span class="lineno">  82</span>             android:layout_height="wrap_content"
+<span class="lineno">  83</span>             <span class="errorspan">android:text="Line" /></span>
+<span class="lineno">  84</span> 
+<span class="lineno">  85</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:90</span>: <span class="message">[I18N] Hardcoded string "Stamp", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  87</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  88</span>             android:layout_width="wrap_content"
+<span class="lineno">  89</span>             android:layout_height="wrap_content"
+<span class="lineno">  90</span>             <span class="errorspan">android:text="Stamp" /></span>
+<span class="lineno">  91</span>         
+<span class="lineno">  92</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:97</span>: <span class="message">[I18N] Hardcoded string " X ", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  94</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  95</span>             android:layout_width="wrap_content"
+<span class="lineno">  96</span>             android:layout_height="wrap_content"
+<span class="lineno">  97</span>             <span class="errorspan">android:text=" X " /></span>
+<span class="lineno">  98</span>         
+<span class="lineno">  99</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:104</span>: <span class="message">[I18N] Hardcoded string "Save", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 101</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 102</span>             android:layout_width="wrap_content"
+<span class="lineno"> 103</span>             android:layout_height="wrap_content"
+<span class="lineno"> 104</span>             <span class="errorspan">android:text="Save" /></span>
+<span class="lineno"> 105</span> 
+<span class="lineno"> 106</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:111</span>: <span class="message">[I18N] Hardcoded string "Close", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 108</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 109</span>             android:layout_width="wrap_content"
+<span class="lineno"> 110</span>             android:layout_height="wrap_content"
+<span class="lineno"> 111</span>             <span class="errorspan">android:text="Close" /></span>
+<span class="lineno"> 112</span>     &lt;/LinearLayout>
+<span class="lineno"> 113</span> 
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:126</span>: <span class="message">[I18N] Hardcoded string "Sel", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 123</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 124</span>             android:layout_width="wrap_content"
+<span class="lineno"> 125</span>             android:layout_height="wrap_content"
+<span class="lineno"> 126</span>             <span class="errorspan">android:text="Sel" /></span>
+<span class="lineno"> 127</span> 
+<span class="lineno"> 128</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:133</span>: <span class="message">[I18N] Hardcoded string "Edit", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 130</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 131</span>             android:layout_width="wrap_content"
+<span class="lineno"> 132</span>             android:layout_height="wrap_content"
+<span class="lineno"> 133</span>             <span class="errorspan">android:text="Edit" /></span>
+<span class="lineno"> 134</span> 
+<span class="lineno"> 135</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:140</span>: <span class="message">[I18N] Hardcoded string "Do", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 137</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 138</span>             android:layout_width="wrap_content"
+<span class="lineno"> 139</span>             android:layout_height="wrap_content"
+<span class="lineno"> 140</span>             <span class="errorspan">android:text="Do" /></span>
+<span class="lineno"> 141</span>         &lt;Button
+<span class="lineno"> 142</span>             android:id="@+id/btn_remove"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/pdf_layout.xml">../../src/main/res/layout/pdf_layout.xml</a>:146</span>: <span class="message">[I18N] Hardcoded string "Remove", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 143</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 144</span>             android:layout_width="wrap_content"
+<span class="lineno"> 145</span>             android:layout_height="wrap_content"
+<span class="lineno"> 146</span>             <span class="errorspan">android:text="Remove" /></span>
+<span class="lineno"> 147</span>     &lt;/LinearLayout>
+<span class="lineno"> 148</span> 
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:36</span>: <span class="message">[I18N] Hardcoded string "the", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  33</span>             android:layout_width="150dp"
+<span class="lineno">  34</span>             android:layout_height="40dp"
+<span class="lineno">  35</span>             android:ems="10"
+<span class="lineno">  36</span>             <span class="errorspan">android:text="the" /></span>
+<span class="lineno">  37</span> 
+<span class="lineno">  38</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:43</span>: <span class="message">[I18N] Hardcoded string "&lt;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  40</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  41</span>             android:layout_width="40dp"
+<span class="lineno">  42</span>             android:layout_height="wrap_content"
+<span class="lineno">  43</span>             <span class="errorspan">android:text="&amp;lt;" /></span>
+<span class="lineno">  44</span> 
+<span class="lineno">  45</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:50</span>: <span class="message">[I18N] Hardcoded string ">", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  47</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  48</span>             android:layout_width="40dp"
+<span class="lineno">  49</span>             android:layout_height="wrap_content"
+<span class="lineno">  50</span>             <span class="errorspan">android:text=">" /></span>
+<span class="lineno">  51</span> 
+<span class="lineno">  52</span>         &lt;/LinearLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:65</span>: <span class="message">[I18N] Hardcoded string "Ink", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  62</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  63</span>             android:layout_width="wrap_content"
+<span class="lineno">  64</span>             android:layout_height="wrap_content"
+<span class="lineno">  65</span>             <span class="errorspan">android:text="Ink" /></span>
+<span class="lineno">  66</span> 
+<span class="lineno">  67</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:72</span>: <span class="message">[I18N] Hardcoded string "Rect", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  69</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  70</span>             android:layout_width="wrap_content"
+<span class="lineno">  71</span>             android:layout_height="wrap_content"
+<span class="lineno">  72</span>             <span class="errorspan">android:text="Rect" /></span>
+<span class="lineno">  73</span>         &lt;Button
+<span class="lineno">  74</span>             android:id="@+id/btn_oval"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:78</span>: <span class="message">[I18N] Hardcoded string "Oval", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  75</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  76</span>             android:layout_width="wrap_content"
+<span class="lineno">  77</span>             android:layout_height="wrap_content"
+<span class="lineno">  78</span>             <span class="errorspan">android:text="Oval" /></span>
+<span class="lineno">  79</span>         
+<span class="lineno">  80</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:85</span>: <span class="message">[I18N] Hardcoded string "Note", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  82</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  83</span>             android:layout_width="wrap_content"
+<span class="lineno">  84</span>             android:layout_height="wrap_content"
+<span class="lineno">  85</span>             <span class="errorspan">android:text="Note" /></span>
+<span class="lineno">  86</span> 
+<span class="lineno">  87</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:92</span>: <span class="message">[I18N] Hardcoded string "Line", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  89</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  90</span>             android:layout_width="wrap_content"
+<span class="lineno">  91</span>             android:layout_height="wrap_content"
+<span class="lineno">  92</span>             <span class="errorspan">android:text="Line" /></span>
+<span class="lineno">  93</span> 
+<span class="lineno">  94</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:99</span>: <span class="message">[I18N] Hardcoded string "Stamp", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  96</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno">  97</span>             android:layout_width="wrap_content"
+<span class="lineno">  98</span>             android:layout_height="wrap_content"
+<span class="lineno">  99</span>             <span class="errorspan">android:text="Stamp" /></span>
+<span class="lineno"> 100</span>         
+<span class="lineno"> 101</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:106</span>: <span class="message">[I18N] Hardcoded string " X ", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 103</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 104</span>             android:layout_width="wrap_content"
+<span class="lineno"> 105</span>             android:layout_height="wrap_content"
+<span class="lineno"> 106</span>             <span class="errorspan">android:text=" X " /></span>
+<span class="lineno"> 107</span>         
+<span class="lineno"> 108</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:113</span>: <span class="message">[I18N] Hardcoded string "Save", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 110</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 111</span>             android:layout_width="wrap_content"
+<span class="lineno"> 112</span>             android:layout_height="wrap_content"
+<span class="lineno"> 113</span>             <span class="errorspan">android:text="Save" /></span>
+<span class="lineno"> 114</span> 
+<span class="lineno"> 115</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:120</span>: <span class="message">[I18N] Hardcoded string "Close", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 117</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 118</span>             android:layout_width="wrap_content"
+<span class="lineno"> 119</span>             android:layout_height="wrap_content"
+<span class="lineno"> 120</span>             <span class="errorspan">android:text="Close" /></span>
+<span class="lineno"> 121</span>     &lt;/LinearLayout>
+<span class="lineno"> 122</span> 
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:135</span>: <span class="message">[I18N] Hardcoded string "Sel", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 132</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 133</span>             android:layout_width="wrap_content"
+<span class="lineno"> 134</span>             android:layout_height="wrap_content"
+<span class="lineno"> 135</span>             <span class="errorspan">android:text="Sel" /></span>
+<span class="lineno"> 136</span> 
+<span class="lineno"> 137</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:142</span>: <span class="message">[I18N] Hardcoded string "Edit", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 139</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 140</span>             android:layout_width="wrap_content"
+<span class="lineno"> 141</span>             android:layout_height="wrap_content"
+<span class="lineno"> 142</span>             <span class="errorspan">android:text="Edit" /></span>
+<span class="lineno"> 143</span> 
+<span class="lineno"> 144</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:149</span>: <span class="message">[I18N] Hardcoded string "Do", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 146</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 147</span>             android:layout_width="wrap_content"
+<span class="lineno"> 148</span>             android:layout_height="wrap_content"
+<span class="lineno"> 149</span>             <span class="errorspan">android:text="Do" /></span>
+<span class="lineno"> 150</span>         &lt;Button
+<span class="lineno"> 151</span>             android:id="@+id/btn_remove"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/reader.xml">../../src/main/res/layout/reader.xml</a>:155</span>: <span class="message">[I18N] Hardcoded string "Remove", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 152</span>             style="?android:attr/buttonStyleSmall"
+<span class="lineno"> 153</span>             android:layout_width="wrap_content"
+<span class="lineno"> 154</span>             android:layout_height="wrap_content"
+<span class="lineno"> 155</span>             <span class="errorspan">android:text="Remove" /></span>
+<span class="lineno"> 156</span>     &lt;/LinearLayout>
+<span class="lineno"> 157</span> 
+</pre>
+</div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 5 / 10<br/>
+Category: Internationalization</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Hardcoded text.</div>
+<div class="explanation">
+Hardcoding text attributes directly in layout files is bad for several reasons:<br/>
+<br/>
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)<br/>
+<br/>
+* The application cannot be translated to other languages by just adding new translations for existing string resources.<br/>
+<br/>
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "HardcodedText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="MissingIssues"></a>
+<div class="category">Disabled Checks<div class="categorySeparator"></div>
+</div>
+The following issues were not run by lint, either because the check is not enabled by default, or because it was disabled with a command line flag or via one or more lint.xml configuration files in the project directories.
+<br/><br/>
+<a name="BackButton"></a>
+<div class="issue">
+<div class="id">BackButton<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Back button.</div>
+<div class="explanation">
+According to the Android Design Guide,<br/>
+<br/>
+"Other platforms use an explicit back button with label to allow the user to navigate up the application's hierarchy. Instead, Android uses the main action bar's app icon for hierarchical navigation and the navigation bar's back button for temporal navigation."<br/>
+This check is not very sophisticated (it just looks for buttons with the label "Back"), so it is disabled by default to not trigger on common scenarios like pairs of Back/Next buttons to paginate through screens.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/patterns/pure-android.html">http://developer.android.com/design/patterns/pure-android.html</a>
+</div><br/>To suppress this error, use the issue id "BackButton" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="EasterEgg"></a>
+<div class="issue">
+<div class="id">EasterEgg<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Code contains easter egg.</div>
+<div class="explanation">
+An "easter egg" is code deliberately hidden in the code, both from potential users and even from other developers. This lint check looks for code which looks like it may be hidden from sight.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "EasterEgg" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="FieldGetter"></a>
+<div class="issue">
+<div class="id">FieldGetter<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using getter instead of field.</div>
+<div class="explanation">
+Accessing a field within the class that defines a getter for that field is at least 3 times faster than calling the getter. For simple getters that do nothing other than return the field, you might want to just reference the local field directly instead.<br/>
+<br/>
+<b>NOTE</b>: As of Android 2.3 (Gingerbread), this optimization is performed automatically by Dalvik, so there is no need to change your code; this is only relevant if you are targeting older versions of Android.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/design/performance.html#internal_get_set">http://developer.android.com/guide/practices/design/performance.html#internal_get_set</a>
+</div><br/>To suppress this error, use the issue id "FieldGetter" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconExpectedSize"></a>
+<div class="issue">
+<div class="id">IconExpectedSize<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Icon has incorrect size.</div>
+<div class="explanation">
+There are predefined sizes (for each density) for launcher icons. You should follow these conventions to make sure your icons fit in with the overall look of the platform.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>
+</div><br/>To suppress this error, use the issue id "IconExpectedSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NegativeMargin"></a>
+<div class="issue">
+<div class="id">NegativeMargin<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Negative Margins.</div>
+<div class="explanation">
+Margin values should be positive. Negative values are generally a sign that you are making assumptions about views surrounding the current one, or may be tempted to turn off child clipping to allow a view to escape its parent. Turning off child clipping to do this not only leads to poor graphical performance, it also results in wrong touch event handling since touch events are based strictly on a chain of parent-rect hit tests. Finally, making assumptions about the size of strings can lead to localization problems.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NegativeMargin" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NewerVersionAvailable"></a>
+<div class="issue">
+<div class="id">NewerVersionAvailable<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Newer Library Versions Available.</div>
+<div class="explanation">
+This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project.<br/>
+This is similar to the <code>GradleDependency</code> check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also <b>much</b> slower.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NewerVersionAvailable" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SelectableText"></a>
+<div class="issue">
+<div class="id">SelectableText<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 7 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Dynamic text should probably be selectable.</div>
+<div class="explanation">
+If a <code>&lt;TextView></code> is used to display data, the user might want to copy that data and paste it elsewhere. To allow this, the <code>&lt;TextView></code> should specify <code>android:textIsSelectable="true"</code>.<br/>
+<br/>
+This lint check looks for TextViews which are likely to be displaying data: views whose text is set dynamically. This value will be ignored on platforms older than API 11, so it is okay to set it regardless of your <code>minSdkVersion</code>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "SelectableText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="StopShip"></a>
+<div class="issue">
+<div class="id">StopShip<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 10 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Code contains <code>STOPSHIP</code> marker.</div>
+<div class="explanation">
+Using the comment <code>// STOPSHIP</code> can be used to flag code that is incomplete but checked in. This comment marker can be used to indicate that the code should not be shipped until the issue is addressed, and lint will look for these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "StopShip" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="TypographyQuotes"></a>
+<div class="issue">
+<div class="id">TypographyQuotes<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Typography</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Straight quotes can be replaced with curvy quotes.</div>
+<div class="explanation">
+Straight single quotes and double quotes, when used as a pair, can be replaced by "curvy quotes" (or directional quotes). This can make the text more readable.<br/>
+<br/>
+Note that you should never use grave accents and apostrophes to quote, `like this'.<br/>
+<br/>
+(Also note that you should not use curvy quotes for code fragments.)
+</div>
+<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Quotation_mark">http://en.wikipedia.org/wiki/Quotation_mark</a>
+</div><br/>To suppress this error, use the issue id "TypographyQuotes" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedIds"></a>
+<div class="issue">
+<div class="id">UnusedIds<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 1 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unused id.</div>
+<div class="explanation">
+This resource id definition appears not to be needed since it is not referenced from anywhere. Having id definitions, even if unused, is not necessarily a bad idea since they make working on layouts and menus easier, so there is not a strong reason to delete these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="SuppressInfo"></a>
+<div class="category">Suppressing Warnings and Errors<div class="categorySeparator"></div>
+</div>
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a @SuppressLint annotation in the Java code<br/>
+2. With a tools:ignore attribute in the XML file<br/>
+3. With a lint.xml configuration file in the project<br/>
+4. With a lint.xml configuration file passed to lint via the --config flag<br/>
+5. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a @SuppressLint("id") annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as "UnusedResources" or {"UnusedResources","UnusedIds"}, or it can be "all" to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a tools:ignore="id" attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the xmlns:android declaration:<br/>
+* xmlns:tools="http://schemas.android.com/tools"<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named lint.xml and place it at the root directory of the project in which it applies. (If you use the Eclipse plugin's Lint view, you can suppress errors there via the toolbar and Eclipse will create the lint.xml file for you.).<br/>
+<br/>
+The format of the lint.xml file is something like the following:<br/>
+<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?><br/>
+&lt;lint><br/>
+    &lt;!-- Disable this given check in this project --><br/>
+    &lt;issue id="IconMissingDensityFolder" severity="ignore" /><br/>
+<br/>
+    &lt;!-- Ignore the ObsoleteLayoutParam issue in the given files --><br/>
+    &lt;issue id="ObsoleteLayoutParam"><br/>
+        &lt;ignore path="res/layout/activation.xml" /><br/>
+        &lt;ignore path="res/layout-xlarge/activation.xml" /><br/>
+    &lt;/issue><br/>
+<br/>
+    &lt;!-- Ignore the UselessLeaf issue in the given file --><br/>
+    &lt;issue id="UselessLeaf"><br/>
+        &lt;ignore path="res/layout/main.xml" /><br/>
+    &lt;/issue><br/>
+<br/>
+    &lt;!-- Change the severity of hardcoded strings to "error" --><br/>
+    &lt;issue id="HardcodedText" severity="error" /><br/>
+&lt;/lint><br/>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+"lint --ignore UnusedResources,UselessLeaf /my/project/path"<br/>
+
+
+</body>
+</html>

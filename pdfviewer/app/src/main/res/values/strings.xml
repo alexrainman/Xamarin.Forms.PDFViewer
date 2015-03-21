@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PDFReader</string>
+    <string name="s_ink">Ink</string>
+    <string name="s_rect">Rect</string>
+    <string name="s_remove">Remove</string>
+    <string name="s_save">Save</string>
+    <string name="s_end">End</string>
+    <string name="s_prev">&lt;</string>
+    <string name="s_next">&gt;</string>
+    <string name="s_find">the</string>
+    <string name="s_act">Do</string>
+    <string name="s_saveas">Save as</string>
+    <color name="clr_back">#FFCCCC80</color>
+    <string name="s_edit">Edit</string>
+    <string name="views">Choose a view</string>
+    
+    <string-array name="views_arrays">
+        <item>Vertical</item>
+        <item>Horizontal</item>
+        <item>Curl Effect</item>
+        <item>Single</item>
+        <item>Single Ex</item>
+        <item>Reflow</item>
+        <item>2 pages as 1 in landscape</item>
+    </string-array>
+
+</resources>

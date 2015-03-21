@@ -1,0 +1,16 @@
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Debug/MonoAndroid,Version=v5.0.AssemblyAttribute.cs
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Debug/radaee33.Jars.pdfreader33.jar
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Debug/radaee33.Jars.com.radaee.view.jar
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Debug/radaee33.obj.Debug.__AndroidNativeLibraries__.zip
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/bin/Debug/radaee33.dll.mdb
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/bin/Debug/radaee33.dll
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Debug/radaee33.dll
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Debug/radaee33.dll.mdb
+/Users/alexrainman/Documents/XamarinProjects/CPA.Forms/radaee33/obj/Debug/MonoAndroid,Version=v5.0.AssemblyAttribute.cs
+/Users/alexrainman/Documents/XamarinProjects/CPA.Forms/radaee33/obj/Debug/radaee33.Jars.pdfreader33.jar
+/Users/alexrainman/Documents/XamarinProjects/CPA.Forms/radaee33/obj/Debug/radaee33.Jars.com.radaee.view.jar
+/Users/alexrainman/Documents/XamarinProjects/CPA.Forms/radaee33/obj/Debug/radaee33.obj.Debug.__AndroidNativeLibraries__.zip
+/Users/alexrainman/Documents/XamarinProjects/CPA.Forms/radaee33/bin/Debug/radaee33.dll.mdb
+/Users/alexrainman/Documents/XamarinProjects/CPA.Forms/radaee33/bin/Debug/radaee33.dll
+/Users/alexrainman/Documents/XamarinProjects/CPA.Forms/radaee33/obj/Debug/radaee33.dll
+/Users/alexrainman/Documents/XamarinProjects/CPA.Forms/radaee33/obj/Debug/radaee33.dll.mdb

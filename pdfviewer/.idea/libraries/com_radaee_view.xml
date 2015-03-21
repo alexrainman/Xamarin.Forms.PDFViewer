@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.radaee.view">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pdfreader33/libs/com.radaee.view.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

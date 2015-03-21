@@ -1,0 +1,5 @@
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.radaee.pdf", Managed="Com.Radaee.Pdf")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.radaee.reader", Managed="Com.Radaee.Reader")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.radaee.util", Managed="Com.Radaee.Util")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.radaee.view", Managed="Com.Radaee.View")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "org.mdanderson.pdfreader33", Managed="Org.Mdanderson.Pdfreader33")]

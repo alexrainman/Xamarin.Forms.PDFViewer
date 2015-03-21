@@ -1,0 +1,2153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 24.1.2">
+
+    <issue
+        id="MissingRegistered"
+        severity="Error"
+        message="Class referenced in the layout file, `com.radaee.reader.PDFReaderOld`, was not found in the project or the libraries"
+        category="Correctness"
+        priority="8"
+        summary="Missing registered class"
+        explanation="If a class is referenced in the manifest, it must also exist in the project (or in one of the libraries included by the project. This check helps uncover typos in registration names, or attempts to rename or move classes without updating the manifest file properly."
+        url="http://developer.android.com/guide/topics/manifest/manifest-intro.html"
+        urls="http://developer.android.com/guide/topics/manifest/manifest-intro.html"
+        errorLine1="    &lt;com.radaee.reader.PDFReaderOld"
+        errorLine2="    ^">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/main.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="MissingRegistered"
+        severity="Error"
+        message="Class referenced in the layout file, `com.radaee.pdfex.ThumbView`, was not found in the project or the libraries"
+        category="Correctness"
+        priority="8"
+        summary="Missing registered class"
+        explanation="If a class is referenced in the manifest, it must also exist in the project (or in one of the libraries included by the project. This check helps uncover typos in registration names, or attempts to rename or move classes without updating the manifest file properly."
+        url="http://developer.android.com/guide/topics/manifest/manifest-intro.html"
+        urls="http://developer.android.com/guide/topics/manifest/manifest-intro.html"
+        errorLine1="        android:layout_alignParentRight=&quot;true&quot; />"
+        errorLine2="    ^">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/main.xml"
+            line="58"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        severity="Warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        category="Correctness"
+        priority="6"
+        summary="Implied default locale in case conversion"
+        explanation="Calling `String#toLowerCase()` or `#toUpperCase()` *without specifying an explicit locale* is a common source of bugs. The reason for that is that those methods will use the current locale on the user&apos;s device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for `i` is *not* `I`.
+
+If you want the methods to just perform ASCII replacement, for example to convert an enum name, call `String#toUpperCase(Locale.US)` instead. If you really want to use the current locale, call `String#toUpperCase(Locale.getDefault())` instead."
+        url="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        urls="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        errorLine1="   Log.d(String.format(&quot;Time:%06d %d&quot;, start/BLOCK_SIZE, len), String.valueOf(time2 - time1));"
+        errorLine2="                ~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/util/PDFHttpStream.java"
+            line="362"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.
+
+To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        url="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        urls="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="        targetSdkVersion 8"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/build.gradle"
+            line="10"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SdCardPath"
+        severity="Warning"
+        message="Do not hardcode &quot;/sdcard/&quot;; use `Environment.getExternalStorageDirectory().getPath()` instead"
+        category="Correctness"
+        priority="6"
+        summary="Hardcoded reference to `/sdcard`"
+        explanation="Your code should not reference the `/sdcard` path directly; instead use `Environment.getExternalStorageDirectory().getPath()`.
+
+Similarly, do not reference the `/data/data/` path directly; it can vary in multi-user scenarios. Instead, use `Context.getFilesDir().getPath()`."
+        url="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        urls="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        errorLine1="        PDFAESEncOld.encrypt(&quot;/sdcard/src.pdf&quot;, &quot;/sdcard/dst.pdf&quot;, key);"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFEncAct.java"
+            line="35"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="SdCardPath"
+        severity="Warning"
+        message="Do not hardcode &quot;/sdcard/&quot;; use `Environment.getExternalStorageDirectory().getPath()` instead"
+        category="Correctness"
+        priority="6"
+        summary="Hardcoded reference to `/sdcard`"
+        explanation="Your code should not reference the `/sdcard` path directly; instead use `Environment.getExternalStorageDirectory().getPath()`.
+
+Similarly, do not reference the `/data/data/` path directly; it can vary in multi-user scenarios. Instead, use `Context.getFilesDir().getPath()`."
+        url="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        urls="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        errorLine1="        if( !m_stream.open(&quot;/sdcard/dst.pdf&quot;, key) )"
+        errorLine2="                           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFEncAct.java"
+            line="39"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="SdCardPath"
+        severity="Warning"
+        message="Do not hardcode &quot;/sdcard/&quot;; use `Environment.getExternalStorageDirectory().getPath()` instead"
+        category="Correctness"
+        priority="6"
+        summary="Hardcoded reference to `/sdcard`"
+        explanation="Your code should not reference the `/sdcard` path directly; instead use `Environment.getExternalStorageDirectory().getPath()`.
+
+Similarly, do not reference the `/data/data/` path directly; it can vary in multi-user scenarios. Instead, use `Context.getFilesDir().getPath()`."
+        url="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        urls="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        errorLine1="        doc.Open(&quot;/sdcard/2-10_Warranty_Form_New_Homeowner_Enrollment.pdf&quot;, null);"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFReaderAct.java"
+            line="258"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="SdCardPath"
+        severity="Warning"
+        message="Do not hardcode &quot;/sdcard/&quot;; use `Environment.getExternalStorageDirectory().getPath()` instead"
+        category="Correctness"
+        priority="6"
+        summary="Hardcoded reference to `/sdcard`"
+        explanation="Your code should not reference the `/sdcard` path directly; instead use `Environment.getExternalStorageDirectory().getPath()`.
+
+Similarly, do not reference the `/data/data/` path directly; it can vary in multi-user scenarios. Instead, use `Context.getFilesDir().getPath()`."
+        url="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        urls="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        errorLine1="        doc.SaveAs(&quot;/sdcard/2-10_Warranty_Form_New_Homeowner_Enrollment - Page 1.pdf&quot;, true);"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFReaderAct.java"
+            line="259"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="SdCardPath"
+        severity="Warning"
+        message="Do not hardcode &quot;/sdcard/&quot;; use `Environment.getExternalStorageDirectory().getPath()` instead"
+        category="Correctness"
+        priority="6"
+        summary="Hardcoded reference to `/sdcard`"
+        explanation="Your code should not reference the `/sdcard` path directly; instead use `Environment.getExternalStorageDirectory().getPath()`.
+
+Similarly, do not reference the `/data/data/` path directly; it can vary in multi-user scenarios. Instead, use `Context.getFilesDir().getPath()`."
+        url="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        urls="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        errorLine1="  String file = &quot;/sdcard/test.pdf&quot;;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFTestAct.java"
+            line="170"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `xlargeScreens` is only used in API level 9 and higher (current min is 8)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the the `minSdkVersion` attribute).
+
+This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.
+
+Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="    &lt;supports-screens android:largeScreens=&quot;true&quot; android:anyDensity=&quot;true&quot; android:normalScreens=&quot;true&quot; android:smallScreens=&quot;true&quot; android:resizeable=&quot;true&quot; android:xlargeScreens=&quot;true&quot;/>"
+        errorLine2="                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/AndroidManifest.xml"
+            line="9"
+            column="160"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  m_layout = (RelativeLayout)LayoutInflater.from(this).inflate(R.layout.pdf_layout, null);"
+        errorLine2="                                                                                    ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutAct.java"
+            line="62"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_password, null);"
+        errorLine2="                                                                                               ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutAct.java"
+            line="153"
+            column="96"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_note, null);"
+        errorLine2="                                                                                           ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutAct.java"
+            line="449"
+            column="92"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_text, null);"
+        errorLine2="                                                                                           ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutAct.java"
+            line="635"
+            column="92"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  m_pEdit = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_edit, null) );"
+        errorLine2="                                                                                    ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutView.java"
+            line="268"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  m_pCombo = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_combo, null));"
+        errorLine2="                                                                                      ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutView.java"
+            line="269"
+            column="87"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  m_pEdit = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_edit, null) );"
+        errorLine2="                                                                                    ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutView.java"
+            line="286"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  m_pCombo = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_combo, null));"
+        errorLine2="                                                                                      ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutView.java"
+            line="287"
+            column="87"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  m_pEdit = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_edit, null) );"
+        errorLine2="                                                                                    ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFReader.java"
+            line="113"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  m_pCombo = new PopupWindow(LayoutInflater.from(context).inflate(R.layout.pop_combo, null));"
+        errorLine2="                                                                                      ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFReader.java"
+            line="114"
+            column="87"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  m_layout = (RelativeLayout)LayoutInflater.from(this).inflate(R.layout.reader, null);"
+        errorLine2="                                                                                ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFReaderAct.java"
+            line="86"
+            column="81"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_password, null);"
+        errorLine2="                                                                                               ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFReaderAct.java"
+            line="190"
+            column="96"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_note, null);"
+        errorLine2="                                                                                           ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFReaderAct.java"
+            line="525"
+            column="92"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="  LinearLayout layout = (LinearLayout)LayoutInflater.from(this).inflate(R.layout.dlg_text, null);"
+        errorLine2="                                                                                           ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFReaderAct.java"
+            line="728"
+            column="92"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This `minSdkVersion` value (`8`) is not used; it is always overridden by the value specified in the Gradle build script (`8`)"
+        category="Correctness"
+        priority="4"
+        summary="Value overridden by Gradle build script"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="    &lt;uses-sdk android:minSdkVersion=&quot;8&quot; />"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/AndroidManifest.xml"
+            line="7"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="MangledCRLF"
+        severity="Error"
+        message="Incorrect line ending: found carriage return (`\r`) without corresponding newline (`\n`)"
+        category="Correctness"
+        priority="2"
+        summary="Mangled file line endings"
+        explanation="On Windows, line endings are typically recorded as carriage return plus newline: \r\n.
+
+This detector looks for invalid line endings with repeated carriage return characters (without newlines). Previous versions of the ADT plugin could accidentally introduce these into the file, and when editing the file, the editor could produce confusing visual artifacts."
+        url="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421"
+        urls="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421"
+        errorLine1="    android:orientation=&quot;vertical&quot; >"
+        errorLine2="^"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/dlg_note.xml"
+            line="6"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="MangledCRLF"
+        severity="Error"
+        message="Incorrect line ending: found carriage return (`\r`) without corresponding newline (`\n`)"
+        category="Correctness"
+        priority="2"
+        summary="Mangled file line endings"
+        explanation="On Windows, line endings are typically recorded as carriage return plus newline: \r\n.
+
+This detector looks for invalid line endings with repeated carriage return characters (without newlines). Previous versions of the ADT plugin could accidentally introduce these into the file, and when editing the file, the editor could produce confusing visual artifacts."
+        url="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421"
+        urls="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421"
+        errorLine1="    android:orientation=&quot;vertical&quot; >"
+        errorLine2="^"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/dlg_text.xml"
+            line="6"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="MangledCRLF"
+        severity="Error"
+        message="Incorrect line ending: found carriage return (`\r`) without corresponding newline (`\n`)"
+        category="Correctness"
+        priority="2"
+        summary="Mangled file line endings"
+        explanation="On Windows, line endings are typically recorded as carriage return plus newline: \r\n.
+
+This detector looks for invalid line endings with repeated carriage return characters (without newlines). Previous versions of the ADT plugin could accidentally introduce these into the file, and when editing the file, the editor could produce confusing visual artifacts."
+        url="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421"
+        urls="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421"
+        errorLine1="            android:text=&quot;@string/s_next&quot; />"
+        errorLine2="^"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/main.xml"
+            line="43"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="MangledCRLF"
+        severity="Error"
+        message="Incorrect line ending: found carriage return (`\r`) without corresponding newline (`\n`)"
+        category="Correctness"
+        priority="2"
+        summary="Mangled file line endings"
+        explanation="On Windows, line endings are typically recorded as carriage return plus newline: \r\n.
+
+This detector looks for invalid line endings with repeated carriage return characters (without newlines). Previous versions of the ADT plugin could accidentally introduce these into the file, and when editing the file, the editor could produce confusing visual artifacts."
+        url="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421"
+        urls="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421"
+        errorLine1="    android:orientation=&quot;vertical&quot; >"
+        errorLine2="^"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pop_edit.xml"
+            line="5"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        severity="Warning"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        category="Correctness"
+        priority="2"
+        summary="Using &apos;px&apos; dimension"
+        explanation="For performance reasons and to keep the code simpler, the Android system uses pixels as the standard unit for expressing dimension or coordinate values. That means that the dimensions of a view are always expressed in the code using pixels, but always based on the current screen density. For instance, if `myView.getWidth()` returns 10, the view is 10 pixels wide on the current screen, but on a device with a higher density screen, the value returned might be 15. If you use pixel values in your application code to work with bitmaps that are not pre-scaled for the current screen density, you might need to scale the pixel values that you use in your code to match the un-scaled bitmap source."
+        url="http://developer.android.com/guide/practices/screens_support.html#screen-independence"
+        urls="http://developer.android.com/guide/practices/screens_support.html#screen-independence"
+        errorLine1="        android:inputType=&quot;textMultiLine&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio,adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/dlg_note.xml"
+            line="22"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        severity="Warning"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        category="Correctness"
+        priority="2"
+        summary="Using &apos;px&apos; dimension"
+        explanation="For performance reasons and to keep the code simpler, the Android system uses pixels as the standard unit for expressing dimension or coordinate values. That means that the dimensions of a view are always expressed in the code using pixels, but always based on the current screen density. For instance, if `myView.getWidth()` returns 10, the view is 10 pixels wide on the current screen, but on a device with a higher density screen, the value returned might be 15. If you use pixel values in your application code to work with bitmaps that are not pre-scaled for the current screen density, you might need to scale the pixel values that you use in your code to match the un-scaled bitmap source."
+        url="http://developer.android.com/guide/practices/screens_support.html#screen-independence"
+        urls="http://developer.android.com/guide/practices/screens_support.html#screen-independence"
+        errorLine1="        android:id=&quot;@+id/bar_cmd&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio,adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/main.xml"
+            line="61"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="TrulyRandom"
+        severity="Warning"
+        message="Potentially insecure random numbers on Android 4.3 and older. Read https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html for more info."
+        category="Security"
+        priority="9"
+        summary="Weak RNG"
+        explanation="Key generation, signing, encryption, and random number generation may not receive cryptographically strong values due to improper initialization of the underlying PRNG on Android 4.3 and below.
+
+If your application relies on cryptographically secure random number generation you should apply the workaround described in https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html .
+
+This lint rule is mostly informational; it does not accurately detect whether cryptographically secure RNG is required, or whether the workaround has already been applied. After reading the blog entry and updating your code if necessary, you can disable this lint issue."
+        url="https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html"
+        urls="https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html"
+        errorLine1="   cipher.init(Cipher.ENCRYPT_MODE, skey, iv);"
+        errorLine2="          ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/util/PDFAESEncOld.java"
+            line="71"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="AllowBackup"
+        severity="Warning"
+        message="Should explicitly set `android:allowBackup` to `true` or `false` (it&apos;s `true` by default, and that can have some security implications for the application&apos;s data)"
+        category="Security"
+        priority="3"
+        summary="Missing `allowBackup` attribute"
+        explanation="The allowBackup attribute determines if an application&apos;s data can be backed up and restored. It is documented at http://developer.android.com/reference/android/R.attr.html#allowBackup
+
+By default, this flag is set to `true`. When this flag is set to `true`, application data can be backed up and restored by the user using `adb backup` and `adb restore`.
+
+This may have security consequences for an application. `adb backup` allows users who have enabled USB debugging to copy application data off of the device. Once backed up, all application data can be read by the user. `adb restore` allows creation of application data from a source specified by the user. Following a restore, applications should not assume that the data, file permissions, and directory permissions were created by the application itself.
+
+Setting `allowBackup=&quot;false&quot;` opts an application out of both backup and restore.
+
+To fix this warning, decide whether your application should support backup, and explicitly set `android:allowBackup=(true|false)&quot;`"
+        url="http://developer.android.com/reference/android/R.attr.html#allowBackup"
+        urls="http://developer.android.com/reference/android/R.attr.html#allowBackup"
+        errorLine1="    &lt;application"
+        errorLine2="    ^"
+        quickfix="studio,adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/AndroidManifest.xml"
+            line="10"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        category="Performance"
+        priority="9"
+        summary="Memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.
+
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.
+
+Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="   BMP bmp = new BMP();"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFCrop.java"
+            line="90"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        category="Performance"
+        priority="9"
+        summary="Memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.
+
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.
+
+Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="  BMP bmp = new BMP();"
+        errorLine2="            ~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFInk.java"
+            line="49"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        category="Performance"
+        priority="9"
+        summary="Memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.
+
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.
+
+Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="  ActivityManager.MemoryInfo info = new ActivityManager.MemoryInfo();"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutView.java"
+            line="506"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        category="Performance"
+        priority="9"
+        summary="Memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.
+
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.
+
+Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="  ActivityManager.MemoryInfo info = new ActivityManager.MemoryInfo();"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFReader.java"
+            line="1052"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="HandlerLeak"
+        severity="Warning"
+        message="This Handler class should be static or leaks might occur (com.radaee.util.PDFGridAdt.1)"
+        category="Performance"
+        priority="4"
+        summary="Handler reference leaks"
+        explanation="Since this Handler is declared as an inner class, it may prevent the outer class from being garbage collected. If the Handler is using a Looper or MessageQueue for a thread other than the main thread, then there is no issue. If the Handler is using the Looper or MessageQueue of the main thread, you need to fix your Handler declaration, as follows: Declare the Handler as a static class; In the outer class, instantiate a WeakReference to the outer class and pass this object to your Handler when you instantiate the Handler; Make all references to members of the outer class using the WeakReference object."
+        errorLine1=" private Handler m_hand_ui = new Handler()"
+        errorLine2="                                 ~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/util/PDFGridAdt.java"
+            line="17"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="HandlerLeak"
+        severity="Warning"
+        message="This Handler class should be static or leaks might occur (com.radaee.util.SnatchAdt.1)"
+        category="Performance"
+        priority="4"
+        summary="Handler reference leaks"
+        explanation="Since this Handler is declared as an inner class, it may prevent the outer class from being garbage collected. If the Handler is using a Looper or MessageQueue for a thread other than the main thread, then there is no issue. If the Handler is using the Looper or MessageQueue of the main thread, you need to fix your Handler declaration, as follows: Declare the Handler as a static class; In the outer class, instantiate a WeakReference to the outer class and pass this object to your Handler when you instantiate the Handler; Make all references to members of the outer class using the WeakReference object."
+        errorLine1=" private Handler m_hand_ui = new Handler()"
+        errorLine2="                                 ~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/util/SnatchAdt.java"
+            line="58"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="FloatMath"
+        severity="Warning"
+        message="Use `java.lang.Math#sqrt` instead of `android.util.FloatMath#sqrt()` since it is faster as of API 8"
+        category="Performance"
+        priority="3"
+        summary="Using `FloatMath` instead of `Math`"
+        explanation="In older versions of Android, using `android.util.FloatMath` was recommended for performance reasons when operating on floats. However, on modern hardware doubles are just as fast as float (though they take more memory), and in recent versions of Android, `FloatMath` is actually slower than using `java.lang.Math` due to the way the JIT optimizes `java.lang.Math`. Therefore, you should use `Math` instead of `FloatMath` if you are only targeting Froyo and above."
+        url="http://developer.android.com/guide/practices/design/performance.html#avoidfloat"
+        urls="http://developer.android.com/guide/practices/design/performance.html#avoidfloat"
+        errorLine1="    m_zoom_dis0 = FloatMath.sqrt(dx * dx + dy * dy);"
+        errorLine2="                            ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutView.java"
+            line="574"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="FloatMath"
+        severity="Warning"
+        message="Use `java.lang.Math#sqrt` instead of `android.util.FloatMath#sqrt()` since it is faster as of API 8"
+        category="Performance"
+        priority="3"
+        summary="Using `FloatMath` instead of `Math`"
+        explanation="In older versions of Android, using `android.util.FloatMath` was recommended for performance reasons when operating on floats. However, on modern hardware doubles are just as fast as float (though they take more memory), and in recent versions of Android, `FloatMath` is actually slower than using `java.lang.Math` due to the way the JIT optimizes `java.lang.Math`. Therefore, you should use `Math` instead of `FloatMath` if you are only targeting Froyo and above."
+        url="http://developer.android.com/guide/practices/design/performance.html#avoidfloat"
+        urls="http://developer.android.com/guide/practices/design/performance.html#avoidfloat"
+        errorLine1="    float dis1 = FloatMath.sqrt(dx * dx + dy * dy);"
+        errorLine2="                           ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutView.java"
+            line="593"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="FloatMath"
+        severity="Warning"
+        message="Use `java.lang.Math#sqrt` instead of `android.util.FloatMath#sqrt()` since it is faster as of API 8"
+        category="Performance"
+        priority="3"
+        summary="Using `FloatMath` instead of `Math`"
+        explanation="In older versions of Android, using `android.util.FloatMath` was recommended for performance reasons when operating on floats. However, on modern hardware doubles are just as fast as float (though they take more memory), and in recent versions of Android, `FloatMath` is actually slower than using `java.lang.Math` due to the way the JIT optimizes `java.lang.Math`. Therefore, you should use `Math` instead of `FloatMath` if you are only targeting Froyo and above."
+        url="http://developer.android.com/guide/practices/design/performance.html#avoidfloat"
+        urls="http://developer.android.com/guide/practices/design/performance.html#avoidfloat"
+        errorLine1="    float dis1 = FloatMath.sqrt(dx * dx + dy * dy);"
+        errorLine2="                           ~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutView.java"
+            line="605"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="InefficientWeight"
+        severity="Warning"
+        message="Use a `layout_height` of `0dp` instead of `wrap_content` for better performance"
+        category="Performance"
+        priority="3"
+        summary="Inefficient layout weight"
+        explanation="When only a single widget in a LinearLayout defines a weight, it is more efficient to assign a width/height of `0dp` to it since it will absorb all the remaining space anyway. With a declared width/height of `0dp` it does not have to measure its own size first."
+        errorLine1="        android:layout_weight=&quot;0.23&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio,adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pop_edit.xml"
+            line="11"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.folder` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/folder.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/folder.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/folder.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/folder.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.layout.main` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/main.xml"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.clr_back` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;color name=&quot;clr_back&quot;>#FFCCCC80&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/values/strings.xml"
+            line="15"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        severity="Warning"
+        message="This `RadioGroup` layout or its `LinearLayout` parent is possibly useless"
+        category="Performance"
+        priority="2"
+        summary="Useless parent layout"
+        explanation="A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy."
+        errorLine1="        android:layout_height=&quot;wrap_content&quot; >"
+        errorLine2="    ^"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/dlg_text.xml"
+            line="11"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="IconDipSize"
+        severity="Warning"
+        message="The image `file03.png` varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/file03.png: 128x128 dp (96x96 px), drawable-mdpi/file03.png: 96x96 dp (96x96 px), drawable-hdpi/file03.png: 64x64 dp (96x96 px), drawable-xhdpi/file03.png: 48x48 dp (96x96 px)"
+        category="Usability:Icons"
+        priority="5"
+        summary="Icon density-independent size validation"
+        explanation="Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (`dip`) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/file03.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/file03.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/file03.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/file03.png"/>
+    </issue>
+
+    <issue
+        id="IconDipSize"
+        severity="Warning"
+        message="The image `folder.png` varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/folder.png: 128x128 dp (96x96 px), drawable-mdpi/folder.png: 96x96 dp (96x96 px), drawable-hdpi/folder.png: 64x64 dp (96x96 px), drawable-xhdpi/folder.png: 48x48 dp (96x96 px)"
+        category="Usability:Icons"
+        priority="5"
+        summary="Icon density-independent size validation"
+        explanation="Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (`dip`) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/folder.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/folder.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/folder.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/folder.png"/>
+    </issue>
+
+    <issue
+        id="IconDipSize"
+        severity="Warning"
+        message="The image `folder0.png` varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/folder0.png: 128x128 dp (96x96 px), drawable-mdpi/folder0.png: 96x96 dp (96x96 px), drawable-hdpi/folder0.png: 64x64 dp (96x96 px), drawable-xhdpi/folder0.png: 48x48 dp (96x96 px)"
+        category="Usability:Icons"
+        priority="5"
+        summary="Icon density-independent size validation"
+        explanation="Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (`dip`) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/folder0.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/folder0.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/folder0.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/folder0.png"/>
+    </issue>
+
+    <issue
+        id="IconDipSize"
+        severity="Warning"
+        message="The image `folder1.png` varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/folder1.png: 128x128 dp (96x96 px), drawable-mdpi/folder1.png: 96x96 dp (96x96 px), drawable-hdpi/folder1.png: 64x64 dp (96x96 px), drawable-xhdpi/folder1.png: 48x48 dp (96x96 px)"
+        category="Usability:Icons"
+        priority="5"
+        summary="Icon density-independent size validation"
+        explanation="Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (`dip`) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/folder1.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/folder1.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/folder1.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/folder1.png"/>
+    </issue>
+
+    <issue
+        id="IconDipSize"
+        severity="Warning"
+        message="The image `folder2.png` varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/folder2.png: 128x128 dp (96x96 px), drawable-mdpi/folder2.png: 96x96 dp (96x96 px), drawable-hdpi/folder2.png: 64x64 dp (96x96 px), drawable-xhdpi/folder2.png: 48x48 dp (96x96 px)"
+        category="Usability:Icons"
+        priority="5"
+        summary="Icon density-independent size validation"
+        explanation="Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (`dip`) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/folder2.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/folder2.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/folder2.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/folder2.png"/>
+    </issue>
+
+    <issue
+        id="IconDipSize"
+        severity="Warning"
+        message="The image `pdf_icon.png` varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/pdf_icon.png: 128x128 dp (96x96 px), drawable-mdpi/pdf_icon.png: 96x96 dp (96x96 px), drawable-hdpi/pdf_icon.png: 64x64 dp (96x96 px), drawable-xhdpi/pdf_icon.png: 48x48 dp (96x96 px)"
+        category="Usability:Icons"
+        priority="5"
+        summary="Icon density-independent size validation"
+        explanation="Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (`dip`) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/pdf_icon.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/pdf_icon.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/pdf_icon.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/pdf_icon.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicatesConfig"
+        severity="Warning"
+        message="The `file03.png` icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi"
+        category="Usability:Icons"
+        priority="5"
+        summary="Identical bitmaps across various configurations"
+        explanation="If an icon is provided under different configuration parameters such as `drawable-hdpi` or `-v11`, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/file03.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/file03.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/file03.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/file03.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicatesConfig"
+        severity="Warning"
+        message="The `folder.png` icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi"
+        category="Usability:Icons"
+        priority="5"
+        summary="Identical bitmaps across various configurations"
+        explanation="If an icon is provided under different configuration parameters such as `drawable-hdpi` or `-v11`, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/folder.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/folder.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/folder.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/folder.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicatesConfig"
+        severity="Warning"
+        message="The `folder0.png` icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi"
+        category="Usability:Icons"
+        priority="5"
+        summary="Identical bitmaps across various configurations"
+        explanation="If an icon is provided under different configuration parameters such as `drawable-hdpi` or `-v11`, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/folder0.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/folder0.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/folder0.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/folder0.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicatesConfig"
+        severity="Warning"
+        message="The `folder1.png` icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi"
+        category="Usability:Icons"
+        priority="5"
+        summary="Identical bitmaps across various configurations"
+        explanation="If an icon is provided under different configuration parameters such as `drawable-hdpi` or `-v11`, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/folder1.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/folder1.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/folder1.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/folder1.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicatesConfig"
+        severity="Warning"
+        message="The `folder2.png` icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi"
+        category="Usability:Icons"
+        priority="5"
+        summary="Identical bitmaps across various configurations"
+        explanation="If an icon is provided under different configuration parameters such as `drawable-hdpi` or `-v11`, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/folder2.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/folder2.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/folder2.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/folder2.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicatesConfig"
+        severity="Warning"
+        message="The `pdf_icon.png` icon has identical contents in the following configuration folders: drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi"
+        category="Usability:Icons"
+        priority="5"
+        summary="Identical bitmaps across various configurations"
+        explanation="If an icon is provided under different configuration parameters such as `drawable-hdpi` or `-v11`, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional.">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-xhdpi/pdf_icon.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-mdpi/pdf_icon.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-ldpi/pdf_icon.png"/>
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/drawable-hdpi/pdf_icon.png"/>
+    </issue>
+
+    <issue
+        id="IconMissingDensityFolder"
+        severity="Warning"
+        message="Missing density variation folders in `src/main/res`: drawable-xxhdpi, drawable-xxxhdpi"
+        category="Usability:Icons"
+        priority="3"
+        summary="Missing density folder"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra-high, extra-extra-high). This lint check identifies folders which are missing, such as `drawable-hdpi`.
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        severity="Warning"
+        message="This text field does not specify an `inputType` or a `hint`"
+        category="Usability"
+        priority="5"
+        summary="Missing `inputType` or `hint`"
+        explanation="Providing an `inputType` attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). Similarly,a hint attribute displays a hint to the user for what is expected in the text field.
+
+The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
+
+If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
+        errorLine1="        android:id=&quot;@+id/txt_subj&quot;"
+        errorLine2="    ^"
+        quickfix="studio,adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/dlg_note.xml"
+            line="9"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        severity="Warning"
+        message="This text field does not specify an `inputType` or a `hint`"
+        category="Usability"
+        priority="5"
+        summary="Missing `inputType` or `hint`"
+        explanation="Providing an `inputType` attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). Similarly,a hint attribute displays a hint to the user for what is expected in the text field.
+
+The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
+
+If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
+        errorLine1="        &lt;EditText"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="22"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        severity="Warning"
+        message="This text field does not specify an `inputType` or a `hint`"
+        category="Usability"
+        priority="5"
+        summary="Missing `inputType` or `hint`"
+        explanation="Providing an `inputType` attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). Similarly,a hint attribute displays a hint to the user for what is expected in the text field.
+
+The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
+
+If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
+        errorLine1="        android:id=&quot;@+id/annot_text&quot;"
+        errorLine2="    ^"
+        quickfix="studio,adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pop_edit.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        severity="Warning"
+        message="This text field does not specify an `inputType` or a `hint`"
+        category="Usability"
+        priority="5"
+        summary="Missing `inputType` or `hint`"
+        explanation="Providing an `inputType` attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). Similarly,a hint attribute displays a hint to the user for what is expected in the text field.
+
+The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
+
+If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
+        errorLine1="        &lt;EditText"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="31"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="Custom view `com/radaee/reader/PDFInk` overrides `onTouchEvent` but not `performClick`"
+        category="Accessibility"
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1=" public boolean onTouchEvent (MotionEvent event)"
+        errorLine2="                ~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFInk.java"
+            line="55"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="Custom view `com/radaee/reader/PDFLayoutView` overrides `onTouchEvent` but not `performClick`"
+        category="Accessibility"
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1=" public boolean onTouchEvent(MotionEvent event)"
+        errorLine2="                ~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFLayoutView.java"
+            line="920"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="Custom view `com/radaee/reader/PDFReader` overrides `onTouchEvent` but not `performClick`"
+        category="Accessibility"
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1=" public boolean onTouchEvent(MotionEvent event)"
+        errorLine2="                ~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/PDFReader.java"
+            line="1368"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="Custom view `com/radaee/util/PDFThumbView` overrides `onTouchEvent` but not `performClick`"
+        category="Accessibility"
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1=" public boolean onTouchEvent(MotionEvent event)"
+        errorLine2="                ~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/util/PDFThumbView.java"
+            line="76"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="Custom view `com/radaee/reader/ReaderController` overrides `onTouchEvent` but not `performClick`"
+        category="Accessibility"
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1=" public boolean onTouchEvent(MotionEvent event)"
+        errorLine2="                ~~~~~~~~~~~~">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/java/com/radaee/reader/ReaderController.java"
+            line="55"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Copy text to clipboard&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:id=&quot;@+id/rad_highlight&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/dlg_text.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Highlight texts&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:id=&quot;@+id/rad_underline&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/dlg_text.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Underline&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:id=&quot;@+id/rad_strikeout&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/dlg_text.xml"
+            line="33"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;StrikeOut&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="         android:id=&quot;@+id/rad_squiggly&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/dlg_text.xml"
+            line="39"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Squiggly&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1=""
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/dlg_text.xml"
+            line="45"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Close&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/main.xml"
+            line="120"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;the&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;the&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;&lt;&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;&amp;lt;&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="34"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;>&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;>&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="41"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Ink&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Ink&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="56"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Rect&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Rect&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="63"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Oval&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Oval&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="69"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Note&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Note&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="76"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Line&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Line&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="83"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Stamp&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Stamp&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="90"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot; X &quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot; X &quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="97"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Save&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Save&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="104"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Close&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Close&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="111"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Sel&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Sel&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="126"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Edit&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Edit&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="133"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Do&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Do&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="140"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Remove&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Remove&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/pdf_layout.xml"
+            line="146"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;the&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;the&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="36"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;&lt;&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;&amp;lt;&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="43"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;>&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;>&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="50"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Ink&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Ink&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="65"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Rect&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Rect&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="72"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Oval&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Oval&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="78"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Note&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Note&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="85"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Line&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Line&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="92"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Stamp&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Stamp&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="99"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot; X &quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot; X &quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="106"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Save&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Save&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="113"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Close&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Close&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="120"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Sel&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Sel&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="135"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Edit&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Edit&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="142"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Do&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Do&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="149"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Remove&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Remove&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/alexrainman/Documents/XamarinProjects/XamarinFormsPDFViewer/pdfviewer/app/src/main/res/layout/reader.xml"
+            line="155"
+            column="13"/>
+    </issue>
+
+</issues>

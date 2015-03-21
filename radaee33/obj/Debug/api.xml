@@ -1,0 +1,3102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.radaee.pdf">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BMP" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BMP" static="false" type="com.radaee.pdf.BMP" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="Create" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="DrawRect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="DrawToDIB" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.DIB">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="Free" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="Invert" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DIB" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DIB" static="false" type="com.radaee.pdf.DIB" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="CreateOrResize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="DrawRect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="DrawToBmp2" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.BMP">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="DrawToBmp" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.BMP">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="DrawToDIB" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.DIB">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="Free" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="IsEmpty" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Document" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Document" static="false" type="com.radaee.pdf.Document" visibility="public">
+<parameter name="p0" type="int[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Document" static="false" type="com.radaee.pdf.Document" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="CanSave" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ChangePageRect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="CheckSignByteRange" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Create" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="CreateForStream" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Document.PDFStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="EncryptAs" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ExportForm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetID" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetMeta" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetOutlines" native="false" return="com.radaee.pdf.Document.Outline" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetPage" native="false" return="com.radaee.pdf.Page" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetPageCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetPageHeight" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetPageWidth" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetPerm" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetPermission" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetSignByteRange" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetSignContents" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetSignFilter" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetSignSubFilter" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ImportPage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Document.ImportContext">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ImportStart" native="false" return="com.radaee.pdf.Document.ImportContext" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Document">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="IsEncrypted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="IsOpened" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="MovePage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="NewFontCID" native="false" return="com.radaee.pdf.Document.DocFont" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="NewGState" native="false" return="com.radaee.pdf.Document.DocGState" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="NewImage" native="false" return="com.radaee.pdf.Document.DocImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="NewImageJPEG" native="false" return="com.radaee.pdf.Document.DocImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="NewImageJPX" native="false" return="com.radaee.pdf.Document.DocImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="NewPage" native="false" return="com.radaee.pdf.Page" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="NewRootOutline" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Open" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OpenMem" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OpenStream" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Document.PDFStream">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RemovePage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Save" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SaveAs" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetCache" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetFontDel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Document.PDFFontDelegate">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetMeta" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetPageRotate" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="hand_val" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Document.DocFont" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Document.DocFont" static="false" type="com.radaee.pdf.Document.DocFont" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetAscent" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetDescent" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Document.DocGState" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Document.DocGState" static="false" type="com.radaee.pdf.Document.DocGState" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetFillAlpha" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetStrokeAlpha" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Document.DocImage" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Document.DocImage" static="false" type="com.radaee.pdf.Document.DocImage" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Document.ImportContext" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Document.ImportContext" static="false" type="com.radaee.pdf.Document.ImportContext" visibility="protected">
+<parameter name="p1" type="com.radaee.pdf.Document">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="Destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_doc" static="false" transient="false" type="com.radaee.pdf.Document" type-generic-aware="com.radaee.pdf.Document" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Document.Outline" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Document.Outline" static="false" type="com.radaee.pdf.Document.Outline" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddChild" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddNext" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetChild" native="false" return="com.radaee.pdf.Document.Outline" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetDest" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetFileLink" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetNext" native="false" return="com.radaee.pdf.Document.Outline" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetTitle" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetURI" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RemoveFromDoc" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetTitle" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="doc" static="false" transient="false" type="com.radaee.pdf.Document" type-generic-aware="com.radaee.pdf.Document" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Document.PDFFontDelegate" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="GetExtFont" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int[]">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Document.PDFStream" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="get_size" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="seek" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="tell" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Global" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Global" static="false" type="com.radaee.pdf.Global" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="DrawScroll" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p1" type="com.radaee.pdf.DIB">
+</parameter>
+<parameter name="p2" type="com.radaee.pdf.DIB">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Init" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.app.Activity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RemoveTmp" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ToDIBPoint" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ToDIBPoint" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+<parameter name="p3" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ToDIBRect" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ToDIBRect" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+<parameter name="p3" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ToPDFPoint" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ToPDFPoint" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+<parameter name="p3" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ToPDFRect" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ToPDFRect" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+<parameter name="p3" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="activeStandard" native="true" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContextWrapper">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="default_config" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="dark_mode" static="true" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="def_view" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fling_dis" static="true" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fling_speed" static="true" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="inkColor" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="inkWidth" static="true" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="need_time_span" static="true" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="rectColor" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="render_mode" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="selColor" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="selRTOL" static="true" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="tmp_path" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="zoomLevel" static="true" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="zoomStep" static="true" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="HWriting" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HWriting" static="false" type="com.radaee.pdf.HWriting" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+<parameter name="p6" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="Destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnDown" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnDraw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.BMP">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnMove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnUp" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Ink" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Ink" static="false" type="com.radaee.pdf.Ink" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="Destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="OnDown" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnDraw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnDraw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="OnMove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="OnUp" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="color" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="width" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Matrix" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Matrix" static="false" type="com.radaee.pdf.Matrix" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="float">
+</parameter>
+<parameter name="p5" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Matrix" static="false" type="com.radaee.pdf.Matrix" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="Destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="Invert" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="TransformInk" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Ink">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="TransformPath" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Path">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="TransformPoint" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="TransformRect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Page" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Page" static="false" type="com.radaee.pdf.Page" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotAttachment" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotBitmap" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotEditbox" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+<parameter name="p6" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotEditbox" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="float">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotEllipse" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotEllipse" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotGlyph" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="com.radaee.pdf.Path">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotGoto" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotHWriting" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="com.radaee.pdf.HWriting">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotInk" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Ink">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotInk" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="com.radaee.pdf.Ink">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotLine" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="float">
+</parameter>
+<parameter name="p6" type="int">
+</parameter>
+<parameter name="p7" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotLine" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="float">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+<parameter name="p6" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotMarkup" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotMarkup" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotPolygon" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Path">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotPolyline" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Path">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotRect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotRect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotStamp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddAnnotURI" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddContent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.PageContent">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddResFont" native="false" return="com.radaee.pdf.Page.ResFont" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Document.DocFont">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddResGState" native="false" return="com.radaee.pdf.Page.ResGState" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Document.DocGState">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AddResImage" native="false" return="com.radaee.pdf.Page.ResImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Document.DocImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="CopyAnnot" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Page.Annotation">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="FindOpen" native="false" return="com.radaee.pdf.Page.Finder" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetAnnot" native="false" return="com.radaee.pdf.Page.Annotation" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetAnnotByName" native="false" return="com.radaee.pdf.Page.Annotation" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetAnnotCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetAnnotFromPoint" native="false" return="com.radaee.pdf.Page.Annotation" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetCropBox" native="false" return="float[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetMediaBox" native="false" return="float[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetRotate" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ObjsAlignWord" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ObjsGetCharCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ObjsGetCharFontName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ObjsGetCharIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ObjsGetCharRect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ObjsGetString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ObjsStart" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Reflow" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.DIB">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ReflowGetCharColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ReflowGetCharCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ReflowGetCharFont" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ReflowGetCharHeight" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ReflowGetCharRect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ReflowGetCharUnicode" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ReflowGetCharWidth" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ReflowGetParaCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ReflowGetText" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ReflowStart" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ReflowToBmp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Render" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.DIB">
+</parameter>
+<parameter name="p1" type="com.radaee.pdf.Matrix">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RenderCancel" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RenderIsFinished" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RenderPrePare" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.DIB">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RenderThumb" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RenderThumbToBuf" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RenderThumbToDIB" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.DIB">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RenderToBmp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p1" type="com.radaee.pdf.Matrix">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RenderToBuf" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="com.radaee.pdf.Matrix">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Render_Normal" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.DIB">
+</parameter>
+<parameter name="p1" type="com.radaee.pdf.Matrix">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Page.Annotation" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Page.Annotation" static="false" type="com.radaee.pdf.Page.Annotation" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="Get3D" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Get3DData" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetAttachment" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetAttachmentData" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetCheckStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetComboItem" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetComboItemCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetComboItemSel" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetDest" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetEditMaxlen" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetEditText" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetEditTextColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetEditTextFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetEditTextRect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetEditTextSize" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetEditType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetFieldFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetFieldFullName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetFieldFullName2" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetFieldName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetFieldType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetFileLink" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetFillColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetIcon" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetIndexInPage" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetInkPath" native="false" return="com.radaee.pdf.Path" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetJS" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetListItem" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetListItemCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetListSels" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetMarkupRects" native="false" return="float[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetMovie" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetMovieData" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetPolygonPath" native="false" return="com.radaee.pdf.Path" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetPolylinePath" native="false" return="com.radaee.pdf.Path" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetPopupSubject" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetPopupText" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetRect" native="false" return="float[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetReset" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetSignStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetSound" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetSoundData" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int[]">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetStrokeColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetStrokeWidth" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetSubmitPara" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetSubmitTarget" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetURI" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="IsHide" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="IsLocked" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="IsLockedContent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="MoveToPage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Page">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RemoveFromPage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RenderToBmp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetCheckValue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetComboItem" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetEditText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetEditTextColor" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetFillColor" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetHide" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetIcon" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetIcon" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="com.radaee.pdf.PageContent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetInkPath" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Path">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetListSels" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetLocked" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetName" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetPolygonPath" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Path">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetPolylinePath" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Path">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetPopupSubject" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetPopupText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetRadio" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetRect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetReset" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetStrokeColor" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetStrokeWidth" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="page" static="false" transient="false" type="com.radaee.pdf.Page" type-generic-aware="com.radaee.pdf.Page" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Page.Finder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Page.Finder" static="false" type="com.radaee.pdf.Page.Finder" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="Close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetFirstChar" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Page.ResFont" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Page.ResFont" static="false" type="com.radaee.pdf.Page.ResFont" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Page.ResGState" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Page.ResGState" static="false" type="com.radaee.pdf.Page.ResGState" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Page.ResImage" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Page.ResImage" static="false" type="com.radaee.pdf.Page.ResImage" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PageContent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PageContent" static="false" type="com.radaee.pdf.PageContent" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="ClipPath" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Path">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Create" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="DrawImage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Page.ResImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="DrawText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="FillPath" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Path">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GSRestore" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GSSave" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GSSet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Page.ResGState">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GSSetMatrix" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Matrix">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetFillColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetStrokeCap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetStrokeColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetStrokeJoin" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetStrokeMiter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetStrokeWidth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="StrokePath" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Path">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextBegin" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextEnd" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextGetSize" native="false" return="float[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Page.ResFont">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="float">
+</parameter>
+<parameter name="p5" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextMove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextNextLine" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextSetCharSpace" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextSetFont" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Page.ResFont">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextSetHScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextSetLeading" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextSetRenderMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextSetRise" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="TextSetWordSpace" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Path" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Path" static="false" type="com.radaee.pdf.Path" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="ClosePath" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="CurveTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="float">
+</parameter>
+<parameter name="p5" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="Destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetNode" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetNodeCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="LineTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="MoveTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="m_hand" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+</class>
+</package>
+<package name="com.radaee.reader">
+<class abstract="false" deprecated="not deprecated" extends="android.view.View" extends-generic-aware="android.view.View" final="false" name="ReaderController" static="false" visibility="public">
+<implements name="com.radaee.view.PDFView.PDFViewListener" name-generic-aware="com.radaee.view.PDFView.PDFViewListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ReaderController" static="false" type="com.radaee.reader.ReaderController" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ReaderController" static="false" type="com.radaee.reader.ReaderController" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnPDFDoubleTapped" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnPDFFound" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnPDFInvalidate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnPDFLongPressed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnPDFPageChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnPDFPageDisplayed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="com.radaee.view.PDFVPage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnPDFSelectEnd" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnPDFSelecting" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="int[]">
+</parameter>
+<parameter name="p2" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnPDFShowPressed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="OnPDFSingleTapped" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Document">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="m_lock_resize" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+<package name="com.radaee.util">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFFileStream" static="false" visibility="public">
+<implements name="com.radaee.pdf.Document.PDFStream" name-generic-aware="com.radaee.pdf.Document.PDFStream">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PDFFileStream" static="false" type="com.radaee.util.PDFFileStream" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get_size" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="seek" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tell" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+<package name="com.radaee.view">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFLayout" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFLayout" static="false" type="com.radaee.view.PDFLayout" visibility="protected">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="vClose" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vDraw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFind" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFindEnd" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFindGoto" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFindStart" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFling" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="float">
+</parameter>
+<parameter name="p5" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFlushRange" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetPage" native="false" return="com.radaee.view.VPage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="vGetPage" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetPos" native="false" return="com.radaee.view.PDFLayout.PDFPos" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetTHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetTWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetX" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetY" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetZoom" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGotoPage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="vLayout" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vMoveEnd" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vOpen" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Document">
+</parameter>
+<parameter name="p1" type="com.radaee.view.PDFLayout.LayoutListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vRenderAsync" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.view.VPage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vRenderFinished" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vRenderSync" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.view.VPage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vResize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vScrollAbort" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vScrollCompute" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetBackColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetPageGap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetPos" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="com.radaee.view.PDFLayout.PDFPos">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetX" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetY" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vZoomConfirmed" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vZoomEnd" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vZoomSet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="com.radaee.view.PDFLayout.PDFPos">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vZoomStart" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="m_back_color" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_bmp" static="false" transient="false" type="android.graphics.Bitmap" type-generic-aware="android.graphics.Bitmap" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_disp_page1" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_disp_page2" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_doc" static="false" transient="false" type="com.radaee.pdf.Document" type-generic-aware="com.radaee.pdf.Document" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_finder" static="false" transient="false" type="com.radaee.view.VFinder" type-generic-aware="com.radaee.view.VFinder" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_h" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_hand_ui" static="false" transient="false" type="android.os.Handler" type-generic-aware="android.os.Handler" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_listener" static="false" transient="false" type="com.radaee.view.PDFLayout.LayoutListener" type-generic-aware="com.radaee.view.PDFLayout.LayoutListener" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_page_gap" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_pages" static="false" transient="false" type="com.radaee.view.VPage[]" type-generic-aware="com.radaee.view.VPage[]" value="null" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_scale" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_scale_max" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_scale_min" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_scroller" static="false" transient="false" type="android.widget.Scroller" type-generic-aware="android.widget.Scroller" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_th" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_thread" static="false" transient="false" type="com.radaee.view.VThread" type-generic-aware="com.radaee.view.VThread" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_tw" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_w" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_zoom_level" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_zoom_level_clip" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_zoom_page0" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_zoom_page1" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.Handler" extends-generic-aware="android.os.Handler" final="false" name="PDFLayout.1" static="false" visibility=""/>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PDFLayout.LayoutListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="OnFound" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPageChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPageDisplayed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="com.radaee.view.VPage">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPageRendered" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnTimer" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFLayout.PDFPos" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFLayout.PDFPos" static="false" type="com.radaee.view.PDFLayout.PDFPos" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="pageno" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="x" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="y" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.radaee.view.PDFLayout" extends-generic-aware="com.radaee.view.PDFLayout" final="false" name="PDFLayoutDual" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFLayoutDual" static="false" type="com.radaee.view.PDFLayoutDual" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetPage" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vLayout" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetLayoutPara" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean[]">
+</parameter>
+<parameter name="p1" type="boolean[]">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFLayoutDual.PDFCell" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="com.radaee.view.PDFLayout" extends-generic-aware="com.radaee.view.PDFLayout" final="false" name="PDFLayoutVert" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFLayoutVert" static="false" type="com.radaee.view.PDFLayoutVert" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetPage" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vLayout" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFVCache" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFVCache" static="false" type="com.radaee.view.PDFVCache" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.Document">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="Clear" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Render" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RenderThumb" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="UIIsSame" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="UIRenderCancel" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<field deprecated="not deprecated" final="false" name="m_dib" static="false" transient="false" type="com.radaee.pdf.DIB" type-generic-aware="com.radaee.pdf.DIB" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_dibh" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_dibw" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_doc" static="false" transient="false" type="com.radaee.pdf.Document" type-generic-aware="com.radaee.pdf.Document" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_page" static="false" transient="false" type="com.radaee.pdf.Page" type-generic-aware="com.radaee.pdf.Page" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_pageno" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_scale" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_status" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFVFinder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFVFinder" static="false" type="com.radaee.view.PDFVFinder" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="find" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_draw" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="com.radaee.view.PDFVPage">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_draw" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.BMP">
+</parameter>
+<parameter name="p1" type="com.radaee.view.PDFVPage">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_draw_to_dib" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.DIB">
+</parameter>
+<parameter name="p1" type="com.radaee.view.PDFVPage">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_end" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_get_page" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_get_pos" native="false" return="float[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_prepare" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_start" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.Document">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFVPage" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFVPage" static="false" type="com.radaee.view.PDFVPage" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.Document">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="CancelRender" native="false" return="com.radaee.view.PDFVCache" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ClearSel" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="CreateBmp" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="CreateInvertMatrix" native="false" return="com.radaee.pdf.Matrix" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="CreateMatrix" native="false" return="com.radaee.pdf.Matrix" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="DeleteBmp" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Draw" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Draw" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.BMP">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="DrawDIB" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.DIB">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetPage" native="false" return="com.radaee.pdf.Page" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetPageNo" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetSel" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetSelRect1" native="false" return="int[]" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetSelRect2" native="false" return="int[]" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetVX" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetVY" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetX" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetY" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="IsFinished" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="NeedBmp" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Reflow" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="RenderPrepare" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetRect" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="SetSel" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="SetSelMarkup" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ToDIBX" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ToDIBY" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ToPDFSize" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ToPDFX" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ToPDFY" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="m_bmp" static="false" transient="false" type="android.graphics.Bitmap" type-generic-aware="android.graphics.Bitmap" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_cache" static="false" transient="false" type="com.radaee.view.PDFVCache" type-generic-aware="com.radaee.view.PDFVCache" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_doc" static="false" transient="false" type="com.radaee.pdf.Document" type-generic-aware="com.radaee.pdf.Document" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_h" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_pageno" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_scale" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_sel" static="false" transient="false" type="com.radaee.view.PDFVSel" type-generic-aware="com.radaee.view.PDFVSel" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_w" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_x" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_y" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFVSel" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFVSel" static="false" type="com.radaee.view.PDFVSel" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.Page">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="Clear" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="DrawSel" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="DrawSel" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.BMP">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="DrawSelToDIB" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.DIB">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetRect1" native="false" return="int[]" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetRect2" native="false" return="int[]" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetSelString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetSel" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetSelMarkup" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="m_index1" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_index2" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_ok" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_page" static="false" transient="false" type="com.radaee.pdf.Page" type-generic-aware="com.radaee.pdf.Page" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_swiped" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" extends-generic-aware="java.lang.Thread" final="false" name="PDFVThread" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFVThread" static="false" type="com.radaee.view.PDFVThread" visibility="protected">
+<parameter name="p0" type="android.os.Handler">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="end_render" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.PDFVPage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="start_find" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.PDFVFinder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="start_render" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.PDFVPage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="start_render_thumb" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.PDFVPage">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.TimerTask" extends-generic-aware="java.util.TimerTask" final="false" name="PDFVThread.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.Handler" extends-generic-aware="android.os.Handler" final="false" name="PDFVThread.2" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFView" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFView" static="false" type="com.radaee.view.PDFView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="motionNormal" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vCenterPage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vClearSel" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vClose" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vComputeScroll" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vDraw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFind" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFindEnd" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFindGoto" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFindStart" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFlushRange" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetDocH" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetDocW" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetLock" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetMaxScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetMinScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetPage" native="false" return="com.radaee.view.PDFVPage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetPage" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetPos" native="false" return="com.radaee.view.PDFView.PDFPos" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetSel" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetWinH" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetWinW" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetX" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetY" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGotoPage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vLayout" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vMovingFinished" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vOnFling" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vOnMoveEnd" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vOnTimer" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vOnZoomEnd" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vOpen" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Document">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="com.radaee.view.PDFView.PDFViewListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vRenderAsync" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.view.PDFVPage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vRenderSync" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.view.PDFVPage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vResize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetBackColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetLock" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetPageGap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetPos" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.view.PDFView.PDFPos">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetSel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetSelMarkup" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetSelStatus" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSingleTap" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vTouchEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MotionEvent">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="STA_CURLING" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STA_MOVING" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STA_NONE" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STA_SELECT" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STA_ZOOM" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_back" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_bmp" static="false" transient="false" type="android.graphics.Bitmap" type-generic-aware="android.graphics.Bitmap" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_doc" static="false" transient="false" type="com.radaee.pdf.Document" type-generic-aware="com.radaee.pdf.Document" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_doch" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_docw" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_draw_bmp" static="false" transient="false" type="com.radaee.pdf.BMP" type-generic-aware="com.radaee.pdf.BMP" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_drawbmp" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_finder" static="false" transient="false" type="com.radaee.view.PDFVFinder" type-generic-aware="com.radaee.view.PDFVFinder" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_h" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_hand_ui" static="false" transient="false" type="android.os.Handler" type-generic-aware="android.os.Handler" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_holdsx" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_holdsy" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_holdx" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_holdy" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_listener" static="false" transient="false" type="com.radaee.view.PDFView.PDFViewListener" type-generic-aware="com.radaee.view.PDFView.PDFViewListener" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_page_gap" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_pageno" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_pages" static="false" transient="false" type="com.radaee.view.PDFVPage[]" type-generic-aware="com.radaee.view.PDFVPage[]" value="null" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_prange_end" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_prange_start" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_scale" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_scale_max" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_scale_min" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_scroller" static="false" transient="false" type="android.widget.Scroller" type-generic-aware="android.widget.Scroller" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_selx1" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_selx2" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_sely1" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_sely2" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_status" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_thread" static="false" transient="false" type="com.radaee.view.PDFVThread" type-generic-aware="com.radaee.view.PDFVThread" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_w" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.Handler" extends-generic-aware="android.os.Handler" final="false" name="PDFView.1" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="android.view.GestureDetector.SimpleOnGestureListener" extends-generic-aware="android.view.GestureDetector.SimpleOnGestureListener" final="false" name="PDFView.PDFGestureListener" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFView.PDFPos" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFView.PDFPos" static="false" type="com.radaee.view.PDFView.PDFPos" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="pageno" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="x" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="y" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PDFView.PDFViewListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPDFDoubleTapped" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPDFFound" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPDFInvalidate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPDFLongPressed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPDFPageChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPDFPageDisplayed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="com.radaee.view.PDFVPage">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPDFSelectEnd" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPDFSelecting" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="int[]">
+</parameter>
+<parameter name="p2" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPDFShowPressed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPDFSingleTapped" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="com.radaee.view.PDFView" extends-generic-aware="com.radaee.view.PDFView" final="false" name="PDFViewCurl" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFViewCurl" static="false" type="com.radaee.view.PDFViewCurl" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.radaee.view.PDFView" extends-generic-aware="com.radaee.view.PDFView" final="false" name="PDFViewDual" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFViewDual" static="false" type="com.radaee.view.PDFViewDual" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetLayoutPara" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean[]">
+</parameter>
+<parameter name="p1" type="boolean[]">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PDFViewDual.PDFCell" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="com.radaee.view.PDFView" extends-generic-aware="com.radaee.view.PDFView" final="false" name="PDFViewHorz" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFViewHorz" static="false" type="com.radaee.view.PDFViewHorz" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetDirection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.radaee.view.PDFView" extends-generic-aware="com.radaee.view.PDFView" final="false" name="PDFViewReflow" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFViewReflow" static="false" type="com.radaee.view.PDFViewReflow" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.radaee.view.PDFView" extends-generic-aware="com.radaee.view.PDFView" final="false" name="PDFViewThumb" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFViewThumb" static="false" type="com.radaee.view.PDFViewThumb" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="vGetOrientation" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetOrientation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetSel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetThumbListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.radaee.view.PDFViewThumb.PDFThumbListener">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PDFViewThumb.PDFThumbListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="OnPageClicked" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="com.radaee.view.PDFView" extends-generic-aware="com.radaee.view.PDFView" final="false" name="PDFViewVert" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PDFViewVert" static="false" type="com.radaee.view.PDFViewVert" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="vSetPageAlign" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="VCache" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="VCache" static="false" type="com.radaee.view.VCache" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.Document">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+<parameter name="p6" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="vDestroy" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vDraw" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.BMP">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vDraw" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.BMP">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vEnd" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFinished" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetH" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetPageNO" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="vGetW" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vIsRender" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vRender" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vRenderThumb" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vStart" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="VFinder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="VFinder" static="false" type="com.radaee.view.VFinder" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="find" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_draw" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="com.radaee.view.VPage">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_end" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_get_page" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_get_pos" native="false" return="float[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_prepare" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="find_start" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.Document">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="VPage" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="VPage" static="false" type="com.radaee.view.VPage" visibility="protected">
+<parameter name="p0" type="com.radaee.pdf.Document">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="CreateInvertMatrix" native="false" return="com.radaee.pdf.Matrix" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetHeight" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetPDFX" native="false" return="float" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetPDFY" native="false" return="float" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetPageNo" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetVX" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetVY" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetWidth" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetX" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="GetY" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="LocHorz" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="LocVert" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="SetX" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ToDIBX" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ToDIBY" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ToPDFSize" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ToPDFX" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="ToPDFY" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vDestroy" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.VThread">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vDraw" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vDraw" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.VThread">
+</parameter>
+<parameter name="p1" type="com.radaee.pdf.BMP">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vEndPage" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.VThread">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vFinished" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vLayout" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.VThread">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vRenderAsync" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.VThread">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vRenderSync" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.VThread">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vZoomConfirmed" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.VThread">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vZoomEnd" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vZoomStart" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<field deprecated="not deprecated" final="false" name="CLIP_H" static="true" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="CLIP_W" static="true" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="VSel" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="VSel" static="false" type="com.radaee.view.VSel" visibility="public">
+<parameter name="p0" type="com.radaee.pdf.Page">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="Clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="DrawSel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetRect1" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetRect2" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="GetSelString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetSel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SetSelMarkup" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="m_index1" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_index2" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_ok" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_page" static="false" transient="false" type="com.radaee.pdf.Page" type-generic-aware="com.radaee.pdf.Page" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="m_swiped" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" extends-generic-aware="java.lang.Thread" final="false" name="VThread" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="VThread" static="false" type="com.radaee.view.VThread" visibility="protected">
+<parameter name="p0" type="android.os.Handler">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="end_render" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.VCache">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start_find" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.VFinder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start_render" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.radaee.view.VCache">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.TimerTask" extends-generic-aware="java.util.TimerTask" final="false" name="VThread.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.Handler" extends-generic-aware="android.os.Handler" final="false" name="VThread.2" static="false" visibility=""/>
+</package>
+<package name="org.mdanderson.pdfreader33">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="org.mdanderson.pdfreader33.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;org.mdanderson.pdfreader33&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+</api>

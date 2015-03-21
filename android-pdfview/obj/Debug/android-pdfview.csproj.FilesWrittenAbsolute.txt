@@ -1,0 +1,7 @@
+/Users/alexrainman/XamarinProjects/CPA.Forms/android-pdfview/obj/Debug/MonoAndroid,Version=v5.0.AssemblyAttribute.cs
+/Users/alexrainman/XamarinProjects/CPA.Forms/android-pdfview/obj/Debug/androidpdfview.Jars.android-pdfview.jar
+/Users/alexrainman/XamarinProjects/CPA.Forms/android-pdfview/obj/Debug/androidpdfview.obj.Debug.__AndroidNativeLibraries__.zip
+/Users/alexrainman/XamarinProjects/CPA.Forms/android-pdfview/bin/Debug/android-pdfview.dll.mdb
+/Users/alexrainman/XamarinProjects/CPA.Forms/android-pdfview/bin/Debug/android-pdfview.dll
+/Users/alexrainman/XamarinProjects/CPA.Forms/android-pdfview/obj/Debug/android-pdfview.dll
+/Users/alexrainman/XamarinProjects/CPA.Forms/android-pdfview/obj/Debug/android-pdfview.dll.mdb

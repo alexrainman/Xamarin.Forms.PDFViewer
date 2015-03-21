@@ -1,0 +1,8 @@
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Release/MonoAndroid,Version=v5.0.AssemblyAttribute.cs
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Release/radaee33.Jars.pdfreader33.jar
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Release/radaee33.Jars.com.radaee.view.jar
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Release/radaee33.obj.Release.__AndroidNativeLibraries__.zip
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/bin/Release/radaee33.dll.mdb
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/bin/Release/radaee33.dll
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Release/radaee33.dll
+/Users/alexrainman/XamarinProjects/CPA.Forms/radaee33/obj/Release/radaee33.dll.mdb
